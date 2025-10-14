@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tree Biodiversity in Ibaan</title>
   <style>
     body {
@@ -146,38 +146,48 @@
       margin-left: auto;
       margin-right: auto;
       overflow: hidden;
-      height: 420px; /* desktop height */
+      height: 550px; /* Taller and more visible */
       display: flex;
       align-items: center;
+      justify-content: center;
+    }
+
+    .proponents marquee {
+      width: 100%;
     }
 
     .proponents marquee img {
-      height: 380px;
-      margin: 10px 20px;
+      height: 500px; /* Adjusted for better proportion */
+      margin: 10px 25px;
       border-radius: 12px;
       transition: all 0.3s ease;
     }
 
-    /* 📱 Responsive auto-resize for mobile */
+    /* 📱 Responsive auto-resize for smaller devices */
     @media (max-width: 768px) {
-      .proponents .marquee-container {
-        height: 260px;
+      .hero h2 {
+        font-size: 48px;
       }
-
+      .hero p {
+        font-size: 18px;
+      }
+      nav ul {
+        flex-wrap: wrap;
+      }
+      .proponents .marquee-container {
+        height: 320px;
+      }
       .proponents marquee img {
-        height: 220px;
-        margin: 8px 12px;
+        height: 280px;
       }
     }
 
     @media (max-width: 480px) {
       .proponents .marquee-container {
-        height: 200px;
+        height: 240px;
       }
-
       .proponents marquee img {
-        height: 160px;
-        margin: 6px 10px;
+        height: 200px;
       }
     }
 
@@ -189,22 +199,10 @@
       padding: 20px 0;
       margin-top: 40px;
     }
-
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 48px;
-      }
-      .hero p {
-        font-size: 18px;
-      }
-      nav ul {
-        flex-wrap: wrap;
-      }
-    }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Tree <span>Biodiversity</span> in Ibaan</h1>
   </header>
@@ -240,7 +238,7 @@
     </table>
 
     <div class="marquee-container">
-      <marquee behavior="scroll" direction="left" scrollamount="5">
+      <marquee behavior="scroll" direction="left" scrollamount="8">
         <img src="picture1.jpg" alt="">
         <img src="picture2.jpg" alt="">
         <img src="picture3.jpg" alt="">
@@ -254,6 +252,5 @@
   <footer>
     © 2025 Tree Biodiversity in Ibaan Project
   </footer>
-
 </body>
 </html>
