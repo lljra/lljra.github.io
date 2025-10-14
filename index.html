@@ -13,7 +13,7 @@
       overflow-x: hidden;
     }
 
-    /* HEADER now part of hero section */
+    /* HEADER */
     header {
       position: absolute;
       top: 30px;
@@ -42,7 +42,7 @@
 
     /* HERO SECTION */
     .hero {
-      background-image: url('forest.jpg'); /* replace with your image */
+      background-image: url('forest.jpg');
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -53,21 +53,22 @@
       color: #153515;
       position: relative;
       animation: fadeIn 2s ease;
+      padding-left: 100px; /* shifted more inward */
     }
 
     .hero h2 {
       background-color: rgba(245, 243, 231, 0.9);
-      padding: 20px 60px 20px 0; /* touches the left edge */
+      padding: 20px 40px;
       font-size: 80px;
       line-height: 1.1;
       font-weight: 900;
       margin: 0;
-      width: 100%;
       border-radius: 0 20px 20px 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       animation: glow 4s ease-in-out infinite, fadeInUp 2.5s ease;
       text-transform: uppercase;
       color: #153515;
+      max-width: 60%;
     }
 
     /* PROPONENTS SECTION */
@@ -155,9 +156,13 @@
 
     /* Responsive auto-resize */
     @media (max-width: 768px) {
+      .hero {
+        padding-left: 50px;
+      }
       .hero h2 {
         font-size: 50px;
-        padding: 15px 30px 15px 0;
+        padding: 15px 25px;
+        max-width: 80%;
       }
       .proponents .marquee-container {
         height: 320px;
@@ -168,9 +173,13 @@
     }
 
     @media (max-width: 480px) {
+      .hero {
+        padding-left: 30px;
+      }
       .hero h2 {
         font-size: 36px;
-        padding: 12px 20px 12px 0;
+        padding: 12px 20px;
+        max-width: 90%;
       }
       .proponents .marquee-container {
         height: 240px;
