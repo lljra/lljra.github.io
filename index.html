@@ -10,65 +10,60 @@
       font-family: 'Poppins', sans-serif;
       background-color: #f5f3e7;
       color: #153515;
-      overflow-x: hidden;
     }
 
     /* HEADER */
     header {
-      position: absolute;
-      top: 30px;
-      left: 40px;
-      z-index: 10;
-      color: #f5f3e7;
-      animation: fadeInDown 2s ease;
-      background: rgba(30, 69, 47, 0.6);
-      padding: 15px 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #1e452f;
+      color: white;
+      padding: 15px 40px;
+      animation: fadeInDown 1s ease-out;
     }
 
     header h1 {
-      font-size: 28px;
+      font-size: 20px;
       margin: 0;
       color: #f5f3e7;
-      letter-spacing: 1px;
     }
 
     header span {
-      color: #ffb347;
-      font-weight: 700;
+      color: #e66900;
+      font-weight: 600;
     }
 
     /* HERO SECTION */
     .hero {
-      background-image: url('forest.jpg');
+      background-image: url('forest.jpg'); /* replace with your image */
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       color: #153515;
-      position: relative;
-      animation: fadeIn 2s ease;
-      padding-left: 100px; /* shifted more inward */
+      animation: fadeIn 2s ease-in;
     }
 
     .hero h2 {
       background-color: rgba(245, 243, 231, 0.9);
       padding: 20px 40px;
-      font-size: 80px;
-      line-height: 1.1;
+      font-size: 72px;
+      line-height: 1;
       font-weight: 900;
       margin: 0;
-      border-radius: 0 20px 20px 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      animation: glow 4s ease-in-out infinite, fadeInUp 2.5s ease;
-      text-transform: uppercase;
-      color: #153515;
-      max-width: 60%;
+      width: fit-content;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+
+      /* ✅ Make white box touch left edge but keep text padded */
+      margin-left: 0;
+      padding-left: 60px;
+
+      animation: slideInLeft 1.5s ease-out;
     }
 
     /* PROPONENTS SECTION */
@@ -79,32 +74,27 @@
       padding: 60px 20px;
       text-align: center;
       color: black;
-      animation: fadeIn 2s ease;
     }
 
     .proponents h2 {
-      font-size: 38px;
-      margin-bottom: 25px;
-      background-color: rgba(255,255,255,0.85);
+      font-size: 36px;
+      margin-bottom: 20px;
+      background-color: rgba(255,255,255,0.8);
       display: inline-block;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border-radius: 8px;
-      animation: float 4s ease-in-out infinite;
     }
 
     .proponents table {
-      margin: 30px auto;
+      margin: 20px auto;
       border-collapse: collapse;
-      background-color: rgba(255, 255, 255, 0.95);
-      width: 85%;
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 80%;
       border: 5px solid #8b5e3c;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
     .proponents th {
-      padding: 14px 20px;
+      padding: 14px;
       font-size: 18px;
     }
 
@@ -112,13 +102,10 @@
       text-decoration: none;
       color: #1e452f;
       font-weight: bold;
-      transition: all 0.3s ease;
     }
 
     .proponents a:hover {
       color: #d8681f;
-      text-shadow: 0 0 8px rgba(216,104,31,0.7);
-      transform: scale(1.05);
     }
 
     /* MARQUEE SLIDER */
@@ -134,8 +121,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     }
 
     .proponents marquee {
@@ -146,23 +131,14 @@
       height: 500px;
       margin: 10px 25px;
       border-radius: 12px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: all 0.3s ease;
     }
 
-    .proponents marquee img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    }
-
-    /* Responsive auto-resize */
+    /* 📱 Responsive auto-resize for smaller devices */
     @media (max-width: 768px) {
-      .hero {
-        padding-left: 50px;
-      }
       .hero h2 {
-        font-size: 50px;
-        padding: 15px 25px;
-        max-width: 80%;
+        font-size: 48px;
+        padding-left: 40px;
       }
       .proponents .marquee-container {
         height: 320px;
@@ -173,14 +149,6 @@
     }
 
     @media (max-width: 480px) {
-      .hero {
-        padding-left: 30px;
-      }
-      .hero h2 {
-        font-size: 36px;
-        padding: 12px 20px;
-        max-width: 90%;
-      }
       .proponents .marquee-container {
         height: 240px;
       }
@@ -196,40 +164,33 @@
       text-align: center;
       padding: 20px 0;
       margin-top: 40px;
-      font-size: 14px;
-      box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
     }
 
-    /* ANIMATIONS */
+    /* ✨ Animations */
     @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-40px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(50px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    @keyframes glow {
-      0% {
-        text-shadow: 0 0 10px #fff7d6, 0 0 20px #ffe185, 0 0 30px #ffcc33, 0 0 40px #f9b233;
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
       }
-      50% {
-        text-shadow: 0 0 20px #fff7d6, 0 0 40px #ffe185, 0 0 60px #ffcc33, 0 0 80px #f9b233;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      100% {
-        text-shadow: 0 0 10px #fff7d6, 0 0 20px #ffe185, 0 0 30px #ffcc33, 0 0 40px #f9b233;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
       }
     }
   </style>
@@ -244,6 +205,7 @@
     <h2>NATURE'S<br>WEALTH</h2>
   </section>
 
+  <!-- PROPONENTS SECTION -->
   <section class="proponents" id="proponents">
     <h2>PROPONENTS OF THE STUDY</h2>
     <table>
