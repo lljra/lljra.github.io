@@ -1,56 +1,128 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>MALUNGGAY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Malunggay</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #3e2723;
+    background: url("images/forest.jpg") no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .content {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: #2e7d32;
+  }
+
+  h2 {
+    color: #1b5e20;
+    margin-top: 1.5rem;
+  }
+
+  h3, h4, li {
+    line-height: 1.6;
+  }
+
+  img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .back-btn {
+    display: inline-block;
+    margin: 1.5rem auto;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .back-btn:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+  }
+
+  footer {
+    text-align: center;
+    color: #4e342e;
+    margin-top: 3rem;
+    font-style: italic;
+  }
+</style>
 </head>
 
-<body background="background.jpg">
-<font color=brown>
-<h1 align =center>TREE'S WEBSHITTTESSS</h1>
-</font>
-<hr>
-<center>
-<table border=5 bgcolor=lightbrown width=80%>
-<th><a href="MANGO.html">MANGO</a></th>
-<th><a href="SANTOL.html">SANTOL</a></th>
-<th><a href="MALUNGGAY.html">MALUNGGAY</a></th>
-<th><a href="CAMIAS.html">CAMIAS</a></th>
-<th><a href="JACKFRUIT.html">JACKFRUIT</a></th>
-<th><a href="MADRE DE CACAO.html">MADRE DE CACAO</a></th>
-<th><a href="BAMBOO.html">BAMBOO</a></th>
-<th><a href="PAPAYA.html">PAPAYA</a></th>
-<th><a href="BANANA.html">BANANA</a></th>
-<th><a href="MAHOGANY.html">MAHOGANY</a></th>
-</table>
-</center>
-<hr>
-<center>
-<cellingpadding=10 width=75%>
-<td>
-<img src="picture5.jpg" height=400>
-<font color=black>
-<h1>MALUNGGAY</h1>
-<ul>
-<h2>SCIENTIFIC NAME</h2>
-<ul>
-<li><h3>"Moringa oleifera Lam"</h3>
-</ul>
-<br>
-<h2>WHAT IS MALUNGGAY?</h2>
-<ul>
-<li><h4>Moringa is a short-lived, fast-growing, drought-resistant, deciduous tree belonging to the family Moringaceae. It is often called the "miracle tree" or "tree of life" because almost all its parts (leaves, pods, seeds, bark, roots, and flowers) are used for food and traditional medicine. It can reach a height of 10–12 meters. Its common names include drumstick tree (for its long, slender pods) and horseradish tree (for the taste of its roots). The plant is widely cultivated for its highly nutritious leaves and young seed pods.</h4>
-</ul>
-<br>
-<h2>HISTORY OF MALUNGGAY</h2>
-<ul>
-<li><h4>Moringa oleifera is believed to be native to the sub-Himalayan tracts of northern India. It was discovered around 2000 BC and quickly became an integral part of the ancient tradition of Ayurvedic medicine. The plant's efficiency was highly valued by traditional Indian doctors. The plant was later introduced and spread from India's subtropical regions to Africa, Southeast Africa, and the Philippines in ancient times, where it continues to thrive globally in almost all tropical and subtropical regions.</h4>
-</ul>
-<br>
-<h2>BENEFITS OF MALUNGGAY</h2>
-<ul>
-<li><h4>The leaves of moringa are highly nutritious, serving as a major source of essential nutrients like B vitamins, Vitamin C, provitamin A (as beta-carotene), Vitamin K, manganese, and protein, which makes it a reliable and inexpensive alternative for good nutrition, especially in developing regions. Traditionally, the bark, roots, and flowers of the tree have been used to treat conditions like ulcers, hypertension, and helminthiasis, while the plant itself has been used as a remedy for wounds, pain, liver disease, heart disease, cancer, and inflammation. Modern studies suggest its efficacy may stem from its anti-inflammatory, antioxidant, and antibacterial properties, with research ongoing into its effects on cholesterol, blood pressure, and managing blood glucose leves.</h4>
-</ul>
-<br>
-<font>
+<body>
+
+  <div class="content">
+    <h1>MALUNGGAY</h1>
+    <img src="images/picture5.jpg" alt="Malunggay Tree">
+
+    <h2>Scientific Name</h2>
+    <ul>
+      <li><h3>Moringa oleifera Lam</h3></li>
+    </ul>
+
+    <h2>What is Malunggay?</h2>
+    <ul>
+      <li><h4>Moringa is a short-lived, fast-growing, drought-resistant, deciduous tree belonging to the family Moringaceae. It is often called the "miracle tree" or "tree of life" because almost all its parts (leaves, pods, seeds, bark, roots, and flowers) are used for food and traditional medicine. It can reach a height of 10–12 meters. Its common names include drumstick tree (for its long, slender pods) and horseradish tree (for the taste of its roots). The plant is widely cultivated for its highly nutritious leaves and young seed pods.</h4></li>
+    </ul>
+
+    <h2>History of Malunggay</h2>
+    <ul>
+      <li><h4>Moringa oleifera is believed to be native to the sub-Himalayan tracts of northern India. It was discovered around 2000 BC and quickly became an integral part of the ancient tradition of Ayurvedic medicine. The plant's efficiency was highly valued by traditional Indian doctors. The plant was later introduced and spread from India's subtropical regions to Africa, Southeast Africa, and the Philippines in ancient times, where it continues to thrive globally in almost all tropical and subtropical regions.</h4></li>
+    </ul>
+
+    <h2>Benefits of Malunggay</h2>
+    <ul>
+      <li><h4>The leaves of moringa are highly nutritious, serving as a major source of essential nutrients like B vitamins, Vitamin C, provitamin A (as beta-carotene), Vitamin K, manganese, and protein, which makes it a reliable and inexpensive alternative for good nutrition, especially in developing regions. Traditionally, the bark, roots, and flowers of the tree have been used to treat conditions like ulcers, hypertension, and helminthiasis, while the plant itself has been used as a remedy for wounds, pain, liver disease, heart disease, cancer, and inflammation. Modern studies suggest its efficacy may stem from its anti-inflammatory, antioxidant, and antibacterial properties, with research ongoing into its effects on cholesterol, blood pressure, and managing blood glucose levels.</h4></li>
+    </ul>
+
+    <center>
+      <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    </center>
+  </div>
+
+  <footer>
+    <p>Balanga Ibaan Flora Catalog © 2025</p>
+  </footer>
 
 </body>
 </html>
