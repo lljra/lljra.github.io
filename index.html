@@ -36,7 +36,7 @@
 
     /* HERO SECTION */
     .hero {
-      background-image: url('forest.jpg'); /* replace with your image */
+      background-image: url('forest.jpg');
       background-size: cover;
       background-position: center;
       height: 90vh;
@@ -58,11 +58,8 @@
       width: fit-content;
       border-top-right-radius: 12px;
       border-bottom-right-radius: 12px;
-
-      /* ✅ Make white box touch left edge but keep text padded */
       margin-left: 0;
       padding-left: 60px;
-
       animation: slideInLeft 1.5s ease-out;
     }
 
@@ -76,13 +73,37 @@
       color: black;
     }
 
-    .proponents h2 {
+    /* BUTTON STYLE */
+    .toggle-btn {
       font-size: 36px;
-      margin-bottom: 20px;
       background-color: rgba(255,255,255,0.8);
       display: inline-block;
       padding: 10px 20px;
       border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 700;
+      animation: floatUpDown 3s ease-in-out infinite;
+    }
+
+    .toggle-btn:hover {
+      background-color: rgba(255,255,255,1);
+      transform: scale(1.03);
+    }
+
+    /* COLLAPSIBLE CONTENT */
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.8s ease;
+    }
+
+    .collapsible-content.show {
+      max-height: 1000px; /* enough space for names + images */
+      opacity: 1;
+      margin-top: 20px;
     }
 
     .proponents table {
@@ -193,6 +214,11 @@
         transform: translateX(0);
       }
     }
+
+    @keyframes floatUpDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
   </style>
 </head>
 
@@ -207,33 +233,43 @@
 
   <!-- PROPONENTS SECTION -->
   <section class="proponents" id="proponents">
-    <h2>PROPONENTS OF THE STUDY</h2>
-    <table>
-      <tr>
-        <th><a href="ken.html">Tristan Ken G. Real</a></th>
-        <th><a href="chiza.html">Chiza Samantha Ardena</a></th>
-        <th><a href="angel.html">Angel S. Dela Cruz</a></th>
-        <th><a href="clea.html">Jazmine Clea Garcia</a></th>
-        <th><a href="princess.html">Princess Dianne B. Semira</a></th>
-        <th><a href="ashley.html">Ashley Lorain A. Ticatic</a></th>
-        <th><a href="plants.html">PROCEED</a></th>
-      </tr>
-    </table>
+    <button class="toggle-btn" onclick="toggleContent()">PROPONENTS OF THE STUDY</button>
 
-    <div class="marquee-container">
-      <marquee behavior="scroll" direction="left" scrollamount="8">
-        <img src="picture1.jpg" alt="">
-        <img src="picture2.jpg" alt="">
-        <img src="picture3.jpg" alt="">
-        <img src="picture4.jpg" alt="">
-        <img src="picture5.jpg" alt="">
-        <img src="picture6.jpg" alt="">
-      </marquee>
+    <div id="collapsibleContent" class="collapsible-content">
+      <table>
+        <tr>
+          <th><a href="ken.html">Tristan Ken G. Real</a></th>
+          <th><a href="chiza.html">Chiza Samantha Ardena</a></th>
+          <th><a href="angel.html">Angel S. Dela Cruz</a></th>
+          <th><a href="clea.html">Jazmine Clea Garcia</a></th>
+          <th><a href="princess.html">Princess Dianne B. Semira</a></th>
+          <th><a href="ashley.html">Ashley Lorain A. Ticatic</a></th>
+          <th><a href="plants.html">PROCEED</a></th>
+        </tr>
+      </table>
+
+      <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+          <img src="picture1.jpg" alt="">
+          <img src="picture2.jpg" alt="">
+          <img src="picture3.jpg" alt="">
+          <img src="picture4.jpg" alt="">
+          <img src="picture5.jpg" alt="">
+          <img src="picture6.jpg" alt="">
+        </marquee>
+      </div>
     </div>
   </section>
 
   <footer>
     © 2025 Web Cataloging of Indigenous Plants and Trees in Balanga, Ibaan, Batangas
   </footer>
+
+  <script>
+    function toggleContent() {
+      const content = document.getElementById("collapsibleContent");
+      content.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
