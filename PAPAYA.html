@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Papaya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #3e2723;
+      background: url("images/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.95);
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      animation: slideUp 1s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #4e342e;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 1.5rem;
+    }
+
+    h3, h4, li {
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto 2rem auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 0.5rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4e342e;
+      background-color: #d7ccc8;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #a1887f;
+      color: white;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 1.5rem auto;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #4e342e;
+      margin-top: 3rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="MANGO.html">Mango</a>
+    <a href="SANTOL.html">Santol</a>
+    <a href="MALUNGGAY.html">Malunggay</a>
+    <a href="CAMIAS.html">Camias</a>
+    <a href="JACKFRUIT.html">Jackfruit</a>
+    <a href="MADRE DE CACAO.html">Madre de Cacao</a>
+    <a href="BAMBOO.html">Bamboo</a>
+    <a href="PAPAYA.html" class="active">Papaya</a>
+    <a href="BANANA.html">Banana</a>
+    <a href="MAHOGANY.html">Mahogany</a>
+  </nav>
+
+  <div class="content">
+    <h1>PAPAYA</h1>
+    <img src="images/picture4.jpg" alt="Papaya Fruit and Tree">
+
+    <h2>Scientific Name</h2>
+    <ul>
+      <li><h3>Carica papaya</h3></li>
+    </ul>
+
+    <h2>What is Papaya?</h2>
+    <ul>
+      <li><h4>
+        Papaya is the succulent fruit of a large plant from the family Caricaceae. Its origin is somewhat unclear but may represent a fusion of two or more Carica species native to Mexico and Central America. Today, papaya is cultivated across the tropical world and into the warmest subtropical regions. The fruit is slightly sweet with a pleasant musky tang, more pronounced in some varieties and climates. It’s a popular breakfast fruit worldwide and is also used in salads, pies, sherbets, juices, and confections. The unripe fruit can be cooked like squash.
+      </h4></li>
+    </ul>
+
+    <h2>History of Papaya</h2>
+    <ul>
+      <li><h4>
+        The papaya has long been cultivated in Mexico and Central America. Its distribution expanded globally with tropical agriculture. It remains an important fruit crop and culinary staple in many countries. The fruit's unique flavor and nutritional properties have contributed to its widespread popularity.
+      </h4></li>
+    </ul>
+
+    <h2>Benefits of Papaya</h2>
+    <ul>
+      <li><h4>
+        Papaya contains the enzyme papain found in the leaves, latex, roots, and fruit, which helps break down proteins and is used in biochemical research. Papain tenderizes meat, clarifies beer, removes hair from hides, and is an enzyme cleanser for soft contact lenses. It's also used in some toothpastes, cosmetics, and treatments for indigestion, ulcers, fever, and swelling. Another enzyme, chymopapain, helps dissolve ruptured discs in lumbar spine injuries and acts as a protein digestant. The unripe fruit’s milky juice contains papain, resembling pepsin, and is used to relieve indigestion and tenderize meat.
+      </h4></li>
+    </ul>
+
+    <center>
+      <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    </center>
+  </div>
+
+  <footer>
+    <p>Balanga Ibaan Flora Catalog © 2025</p>
+  </footer>
+
+</body>
+</html>
