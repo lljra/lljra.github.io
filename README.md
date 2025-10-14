@@ -1,8 +1,4 @@
-# PROPONENTS OF THE STUDY 🌐
-
-This website presents the **proponents of the study**, featuring links to each member’s personal page and a photo gallery that showcases the group.  
-It serves as an introduction to the people behind the project.
-
+# BALANGA IBAAN FLORA CATALOG 🌐
 ---
 
 ## 🧑‍💻 Proponents
@@ -19,14 +15,12 @@ It serves as an introduction to the people behind the project.
 The website contains:
 - A **homepage** listing all proponents with links to their respective pages (`ken.html`, `chiza.html`, etc.)  
 - A **scrolling image gallery** that displays group pictures  
-- A simple and clean **HTML-based design** with a custom background and table layout  
 
 ---
 
 ## 🚀 Live Website
 Visit the website here:  
 👉 **[https://lljra.github.io/proponents-website/](https://lljra.github.io/proponents-website/)**  
-*(Replace “yourusername” with your actual GitHub username.)*
 
 ---
 
