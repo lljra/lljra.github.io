@@ -59,7 +59,7 @@
       font-weight: 900;
       margin: 0;
       width: fit-content;
-      border-radius: 16px; /* rounded all sides */
+      border-radius: 16px;
       margin-left: 30px;
       animation: slideInLeft 1.5s ease-out;
     }
@@ -77,7 +77,6 @@
     /* BUTTONS (shared) */
     .btn {
       font-size: 30px;
-      background-color: rgba(255,255,255,0.85);
       display: inline-block;
       padding: 14px 28px;
       border-radius: 8px;
@@ -89,13 +88,28 @@
     }
 
     .btn:hover {
-      background-color: rgba(255,255,255,1);
       transform: scale(1.05);
     }
 
-    /* Floating animation (apply to any button that should float) */
-    .float-btn {
+    /* PROCEED BUTTON */
+    .btn-proceed {
+      background-color: #1e452f;
+      color: white;
+      margin-bottom: 25px;
+    }
+
+    .btn-proceed:hover {
+      background-color: #256f43;
+    }
+
+    /* PROPONENTS BUTTON (still floating) */
+    .btn-proponents {
+      background-color: rgba(255,255,255,0.85);
       animation: floatUpDown 3s ease-in-out infinite;
+    }
+
+    .btn-proponents:hover {
+      background-color: rgba(255,255,255,1);
     }
 
     /* COLLAPSIBLE CONTENT */
@@ -227,7 +241,7 @@
 
 <body>
   <header>
-    <h1>Balanga Ibaan <span style="color:#e66900">Flora Catalog</span></h1>
+    <h1>Balanga Ibaan <span>Flora Catalog</span></h1>
   </header>
 
   <section class="hero">
@@ -237,14 +251,14 @@
   <!-- PROPONENTS SECTION -->
   <section class="proponents" id="proponents">
 
-    <!-- PROCEED BUTTON (now uses same float animation class if you want it) -->
+    <!-- STATIC PROCEED BUTTON -->
     <a href="plants.html" aria-label="Proceed to plants page">
-      <button class="btn float-btn">PROCEED</button>
+      <button class="btn btn-proceed">PROCEED</button>
     </a>
     <br>
 
-    <!-- TOGGLE BUTTON -->
-    <button class="btn float-btn" onclick="toggleContent()">PROPONENTS OF THE STUDY</button>
+    <!-- FLOATING PROPONENTS BUTTON -->
+    <button class="btn btn-proponents" onclick="toggleContent()">PROPONENTS OF THE STUDY</button>
 
     <!-- COLLAPSIBLE CONTENT -->
     <div id="collapsibleContent" class="collapsible-content" aria-hidden="true">
@@ -280,7 +294,6 @@
     function toggleContent() {
       const content = document.getElementById("collapsibleContent");
       content.classList.toggle("show");
-      // accessibility: set aria-hidden
       const isShown = content.classList.contains("show");
       content.setAttribute('aria-hidden', (!isShown).toString());
     }
