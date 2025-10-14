@@ -16,16 +16,17 @@
     header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       background-color: #1e452f;
       color: white;
-      padding: 15px 40px;
+      padding: 20px 40px;
     }
 
     header h1 {
-      font-size: 20px;
+      font-size: 26px;
       margin: 0;
       color: #f5f3e7;
+      text-align: center;
     }
 
     header span {
@@ -35,32 +36,27 @@
 
     /* HERO SECTION */
     .hero {
-      background-image: url('forest.jpg'); /* replace with your image */
+      background-image: url('forest.jpg'); /* replace with your actual image */
       background-size: cover;
       background-position: center;
       height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding: 0 60px;
+      align-items: center;
+      text-align: center;
       color: #153515;
+      padding: 0 20px;
     }
 
     .hero h2 {
       background-color: rgba(245, 243, 231, 0.9);
       padding: 20px 40px;
       font-size: 72px;
-      line-height: 1;
+      line-height: 1.1;
       font-weight: 900;
       margin: 0;
-    }
-
-    .hero p {
-      background-color: rgba(245, 243, 231, 0.9);
-      padding: 10px 20px;
-      font-size: 22px;
-      margin-top: 10px;
+      border-radius: 10px;
     }
 
     /* PROPONENTS SECTION */
@@ -75,23 +71,23 @@
 
     .proponents h2 {
       font-size: 36px;
-      margin-bottom: 20px;
-      background-color: rgba(255,255,255,0.8);
+      margin-bottom: 25px;
+      background-color: rgba(255,255,255,0.85);
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 24px;
       border-radius: 8px;
     }
 
     .proponents table {
-      margin: 20px auto;
+      margin: 30px auto;
       border-collapse: collapse;
-      background-color: rgba(255, 255, 255, 0.9);
-      width: 80%;
+      background-color: rgba(255, 255, 255, 0.95);
+      width: 85%;
       border: 5px solid #8b5e3c;
     }
 
     .proponents th {
-      padding: 14px;
+      padding: 14px 20px;
       font-size: 18px;
     }
 
@@ -134,10 +130,7 @@
     /* 📱 Responsive auto-resize for smaller devices */
     @media (max-width: 768px) {
       .hero h2 {
-        font-size: 48px;
-      }
-      .hero p {
-        font-size: 18px;
+        font-size: 50px;
       }
       .proponents .marquee-container {
         height: 320px;
@@ -148,6 +141,9 @@
     }
 
     @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 36px;
+      }
       .proponents .marquee-container {
         height: 240px;
       }
@@ -163,18 +159,18 @@
       text-align: center;
       padding: 20px 0;
       margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Tree <span>Biodiversity</span> in Ibaan</h1>
+    <h1><span>Balanga Ibaan Flora Catalog</span></h1>
   </header>
 
   <section class="hero">
     <h2>NATURE'S<br>WEALTH</h2>
-    <p>Since 2024</p>
   </section>
 
   <!-- PROPONENTS SECTION -->
