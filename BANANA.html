@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banana</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #3e2723;
+      background: url("images/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.95);
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      animation: slideUp 1s ease-out;
+      text-align: center;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #4e342e;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    h3, h4, li {
+      line-height: 1.6;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto 1rem auto;
+    }
+
+    img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 2rem auto 0 auto;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #4e342e;
+      margin-top: 3rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content">
+    <h1>BANANA</h1>
+    <img src="images/picture9.jpg" alt="Banana Fruit and Tree">
+
+    <h2>Scientific Name</h2>
+    <ul>
+      <li><h3>Musa acuminata</h3></li>
+    </ul>
+
+    <h2>What is Banana?</h2>
+    <ul>
+      <li><h4>
+        The banana is the fruit of the genus Musa, family Musaceae, one of the world's most important fruit crops. Grown mostly in the tropics, bananas are valued worldwide for their flavor, nutritional value, and year-round availability. Dessert bananas (Cavendish) are commonly eaten fresh, but can also be fried, mashed, or used in pies, puddings, muffins, cakes, and breads.
+      </h4></li>
+    </ul>
+
+    <h2>History of Banana</h2>
+    <ul>
+      <li><h4>
+        Bananas were first domesticated in Southeast Asia. Early Greek, Latin, and Arab writings mention bananas, with Alexander the Great encountering them in India. After the discovery of America, bananas were introduced from the Canary Islands to the New World, spreading rapidly. By the 19th century, they were common in U.S. markets. While dessert bananas dominate international trade, plantains make up about 85% of worldwide cultivation.
+      </h4></li>
+    </ul>
+
+    <h2>Benefits of Banana</h2>
+    <ul>
+      <li><h4>
+        Bananas are a widely consumed fruit known for their nutritional benefits. A ripe banana contains about 22% carbohydrates and is rich in dietary fiber, potassium, manganese, vitamins B6 and C. Per 100g, it provides around 92 kcal energy, 74.26g water, and various vitamins and minerals. They contain minimal fat and protein but are an excellent source of nutrients.
+      </h4></li>
+    </ul>
+
+    <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+  </div>
+
+  <footer>
+    <p>Balanga Ibaan Flora Catalog © 2025</p>
+  </footer>
+
+</body>
+</html>
