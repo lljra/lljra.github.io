@@ -1,68 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Proponents of the Study</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree Biodiversity in Ibaan</title>
   <style>
     body {
-      background: url('b2.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      color: black;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f3e7;
+      color: #153515;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #1e452f;
+      color: white;
+      padding: 15px 40px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #f5f3e7;
+    }
+
+    header span {
+      color: #e66900;
+      font-weight: 600;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background-color: #d8681f;
+      padding: 0;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style: none;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
     }
 
-    h1 {
-      text-align: center;
-      margin-top: 30px;
+    nav ul li {
+      margin: 0;
     }
 
-    table {
-      border-collapse: collapse;
-      margin: 20px auto;
-    }
-
-    th {
-      background-color: #d2b48c;
-      padding: 10px 20px;
-      border: 2px solid black;
-      font-size: 18px;
-    }
-
-    th a {
+    nav ul li a {
+      display: block;
+      padding: 14px 24px;
       text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #153515;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background-image: url('forest.jpg'); /* replace with your image */
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 60px;
+      color: #153515;
+    }
+
+    .hero h2 {
+      background-color: rgba(245, 243, 231, 0.9);
+      padding: 20px 40px;
+      font-size: 72px;
+      line-height: 1;
+      font-weight: 900;
+      margin: 0;
+    }
+
+    .hero p {
+      background-color: rgba(245, 243, 231, 0.9);
+      padding: 10px 20px;
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    /* PROPONENTS SECTION */
+    .proponents {
+      background-image: url('b2.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      text-align: center;
       color: black;
     }
 
-    th a:hover {
-      color: green;
-    }
-
-    .gallery {
-      background-color: white;
-      width: 75%;
-      margin: 20px auto;
-      padding: 10px;
-      border: 3px solid black;
-    }
-
-    marquee img {
-      margin-right: 10px;
+    .proponents h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      background-color: rgba(255,255,255,0.8);
+      display: inline-block;
+      padding: 10px 20px;
       border-radius: 8px;
     }
 
-    hr {
-      width: 90%;
+    .proponents table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 80%;
+      border: 5px solid #8b5e3c;
+    }
+
+    .proponents th {
+      padding: 14px;
+      font-size: 18px;
+    }
+
+    .proponents a {
+      text-decoration: none;
+      color: #1e452f;
+      font-weight: bold;
+    }
+
+    .proponents a:hover {
+      color: #d8681f;
+    }
+
+    .proponents .marquee-container {
+      margin-top: 40px;
+      border: 5px solid #8b5e3c;
+      background-color: white;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+    }
+
+    .proponents marquee img {
+      height: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #1e452f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 48px;
+      }
+      .hero p {
+        font-size: 18px;
+      }
+      nav ul {
+        flex-wrap: wrap;
+      }
     }
   </style>
 </head>
-
 <body>
-  <h1>PROPONENTS OF THE STUDY</h1>
-  <hr>
 
-  <center>
-    <table width="80%">
+  <header>
+    <h1>Tree <span>Biodiversity</span> in Ibaan</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Mission and Vision</a></li>
+      <li><a href="#">Tracker</a></li>
+      <li><a href="#">Tree Species Database</a></li>
+      <li><a href="#">More</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>ROOTED<br>RICHES</h2>
+    <p>Since 2024</p>
+  </section>
+
+  <!-- PROPONENTS SECTION -->
+  <section class="proponents" id="proponents">
+    <h2>PROPONENTS OF THE STUDY</h2>
+    <table>
       <tr>
         <th><a href="ken.html">Tristan Ken G. Real</a></th>
         <th><a href="chiza.html">Chiza Samantha Ardena</a></th>
@@ -73,19 +210,22 @@
         <th><a href="plants.html">PROCEED</a></th>
       </tr>
     </table>
-  </center>
 
-  <hr>
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left">
+        <img src="picture1.jpg" alt="">
+        <img src="picture2.jpg" alt="">
+        <img src="picture3.jpg" alt="">
+        <img src="picture4.jpg" alt="">
+        <img src="picture5.jpg" alt="">
+        <img src="picture6.jpg" alt="">
+      </marquee>
+    </div>
+  </section>
 
-  <div class="gallery">
-    <marquee behavior="scroll" direction="left">
-      <img src="picture1.jpg" height="400">
-      <img src="picture2.jpg" height="400">
-      <img src="picture3.jpg" height="400">
-      <img src="picture4.jpg" height="400">
-      <img src="picture5.jpg" height="400">
-      <img src="picture6.jpg" height="400">
-    </marquee>
-  </div>
+  <footer>
+    © 2025 Tree Biodiversity in Ibaan Project
+  </footer>
+
 </body>
 </html>
