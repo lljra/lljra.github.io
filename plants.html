@@ -6,142 +6,167 @@
   <title>Balanga Ibaan Flora Catalog</title>
   <style>
     body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
       background: url('forest.jpg') no-repeat center center fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
-      color: white;
+      color: #153515;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(1.02); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.8);
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+
+    h1 {
       text-align: center;
-      margin: 0;
-      padding: 0;
+      font-size: 48px;
+      color: #1e452f;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      margin-bottom: 40px;
+      animation: slideDown 1s ease;
     }
 
-    header {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      backdrop-filter: blur(5px);
-    }
-
-    header h1 {
-      margin: 0;
-      color: #fff;
-      font-size: 28px;
-    }
-
-    main {
-      margin-top: 120px;
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
 
     .plant-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-      padding: 40px;
-      max-width: 1100px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      width: 90%;
       margin: auto;
     }
 
     .plant-card {
-      background-color: rgba(255, 255, 255, 0.15);
-      border-radius: 20px;
-      overflow: hidden;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: all 0.3s ease;
       cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .plant-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      background-color: #eaf5eb;
     }
 
     .plant-card img {
       width: 100%;
-      height: 180px;
+      height: 140px;
       object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
     }
 
-    .plant-card h2 {
-      background: rgba(0, 0, 0, 0.6);
-      margin: 0;
-      padding: 15px;
-      color: #fff;
-      font-size: 20px;
+    .plant-card:hover img {
+      transform: scale(1.05);
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 20px;
-      }
+    .plant-card a {
+      text-decoration: none;
+      color: #1e452f;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-      .plant-card img {
-        height: 150px;
-      }
+    .plant-card a:hover {
+      color: #d8681f;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e452f;
+      color: white;
+      padding: 15px 0;
+      margin-top: 60px;
     }
   </style>
 </head>
+
 <body>
+  <div class="overlay">
+    <h1>🌿 Balanga Ibaan Flora Catalog 🌿</h1>
 
-  <header>
-    <h1>🌿 Balanga Ibaan Flora Catalog</h1>
-  </header>
-
-  <main>
     <div class="plant-grid">
-      <div class="plant-card" onclick="location.href='SANTOL.html'">
-        <img src="santol.jpg" alt="Santol">
-        <h2>Santol</h2>
+      <div class="plant-card">
+        <a href="MANGO.html">
+          <img src="mango.jpg" alt="Mango">
+          MANGO
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='MANGO.html'">
-        <img src="mango.jpg" alt="Mango">
-        <h2>Mango</h2>
+      <div class="plant-card">
+        <a href="SANTOL.html">
+          <img src="santol.jpg" alt="Santol">
+          SANTOL
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='MALUNGGAY.html'">
-        <img src="malunggay.jpg" alt="Malunggay">
-        <h2>Malunggay</h2>
+      <div class="plant-card">
+        <a href="MALUNGGAY.html">
+          <img src="malunggay.jpg" alt="Malunggay">
+          MALUNGGAY
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='CAMIAS.html'">
-        <img src="camias.jpg" alt="Camias">
-        <h2>Camias</h2>
+      <div class="plant-card">
+        <a href="CAMIAS.html">
+          <img src="camias.jpg" alt="Camias">
+          CAMIAS
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='JACKFRUIT.html'">
-        <img src="jackfruit.jpg" alt="Jackfruit">
-        <h2>Jackfruit</h2>
+      <div class="plant-card">
+        <a href="JACKFRUIT.html">
+          <img src="jackfruit.jpg" alt="Jackfruit">
+          JACKFRUIT
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='MADRE DE CACAO.html'">
-        <img src="madre.jpg" alt="Madre de Cacao">
-        <h2>Madre de Cacao</h2>
+      <div class="plant-card">
+        <a href="MADRE DE CACAO.html">
+          <img src="madredecacao.jpg" alt="Madre de Cacao">
+          MADRE DE CACAO
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='BAMBOO.html'">
-        <img src="bamboo.jpg" alt="Bamboo">
-        <h2>Bamboo</h2>
+      <div class="plant-card">
+        <a href="BAMBOO.html">
+          <img src="bamboo.jpg" alt="Bamboo">
+          BAMBOO
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='PAPAYA.html'">
-        <img src="papaya.jpg" alt="Papaya">
-        <h2>Papaya</h2>
+      <div class="plant-card">
+        <a href="PAPAYA.html">
+          <img src="papaya.jpg" alt="Papaya">
+          PAPAYA
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='BANANA.html'">
-        <img src="banana.jpg" alt="Banana">
-        <h2>Banana</h2>
+      <div class="plant-card">
+        <a href="BANANA.html">
+          <img src="banana.jpg" alt="Banana">
+          BANANA
+        </a>
       </div>
-
-      <div class="plant-card" onclick="location.href='MAHOGANY.html'">
-        <img src="mahogany.jpg" alt="Mahogany">
-        <h2>Mahogany</h2>
+      <div class="plant-card">
+        <a href="MAHOGANY.html">
+          <img src="mahogany.jpg" alt="Mahogany">
+          MAHOGANY
+        </a>
       </div>
     </div>
-  </main>
+  </div>
 
+  <footer>
+    © 2025 Balanga Ibaan Flora Catalog | Designed with 🌿 Nature in Mind
+  </footer>
 </body>
 </html>
