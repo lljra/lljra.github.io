@@ -59,7 +59,7 @@
       font-weight: 900;
       margin: 0;
       width: fit-content;
-      border-radius: 16px; /* ✅ Rounded on all sides */
+      border-radius: 16px; /* rounded all sides */
       margin-left: 30px;
       animation: slideInLeft 1.5s ease-out;
     }
@@ -74,7 +74,7 @@
       color: black;
     }
 
-    /* BUTTONS */
+    /* BUTTONS (shared) */
     .btn {
       font-size: 30px;
       background-color: rgba(255,255,255,0.85);
@@ -93,7 +93,7 @@
       transform: scale(1.05);
     }
 
-    /* Floating animation for the "Proponents" button */
+    /* Floating animation (apply to any button that should float) */
     .float-btn {
       animation: floatUpDown 3s ease-in-out infinite;
     }
@@ -170,6 +170,7 @@
       }
       .btn {
         font-size: 22px;
+        padding: 12px 22px;
       }
       .proponents .marquee-container {
         height: 320px;
@@ -182,6 +183,7 @@
     @media (max-width: 480px) {
       .btn {
         font-size: 20px;
+        padding: 10px 18px;
       }
       .proponents .marquee-container {
         height: 240px;
@@ -225,7 +227,7 @@
 
 <body>
   <header>
-    <h1>Balanga Ibaan <span>Flora Catalog</span></h1>
+    <h1>Balanga Ibaan <span style="color:#e66900">Flora Catalog</span></h1>
   </header>
 
   <section class="hero">
@@ -234,9 +236,10 @@
 
   <!-- PROPONENTS SECTION -->
   <section class="proponents" id="proponents">
-    <!-- NEW PROCEED BUTTON -->
-    <a href="plants.html">
-      <button class="btn">PROCEED</button>
+
+    <!-- PROCEED BUTTON (now uses same float animation class if you want it) -->
+    <a href="plants.html" aria-label="Proceed to plants page">
+      <button class="btn float-btn">PROCEED</button>
     </a>
     <br>
 
@@ -244,7 +247,7 @@
     <button class="btn float-btn" onclick="toggleContent()">PROPONENTS OF THE STUDY</button>
 
     <!-- COLLAPSIBLE CONTENT -->
-    <div id="collapsibleContent" class="collapsible-content">
+    <div id="collapsibleContent" class="collapsible-content" aria-hidden="true">
       <table>
         <tr>
           <th><a href="ken.html">Tristan Ken G. Real</a></th>
@@ -277,6 +280,9 @@
     function toggleContent() {
       const content = document.getElementById("collapsibleContent");
       content.classList.toggle("show");
+      // accessibility: set aria-hidden
+      const isShown = content.classList.contains("show");
+      content.setAttribute('aria-hidden', (!isShown).toString());
     }
   </script>
 </body>
