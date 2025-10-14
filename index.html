@@ -17,7 +17,7 @@
     header {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* Moved left */
       background-color: #1e452f;
       color: white;
       padding: 20px 40px;
@@ -29,7 +29,6 @@
       font-size: 26px;
       margin: 0;
       color: #f5f3e7;
-      text-align: center;
       letter-spacing: 1px;
     }
 
@@ -47,10 +46,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
+      align-items: flex-start; /* Move text to left */
+      text-align: left; /* Align text to left */
       color: #153515;
-      padding: 0 20px;
+      padding: 0 60px;
       animation: fadeIn 2s ease;
       position: relative;
     }
@@ -154,6 +153,10 @@
 
     /* Responsive auto-resize */
     @media (max-width: 768px) {
+      .hero {
+        align-items: flex-start;
+        padding: 0 30px;
+      }
       .hero h2 {
         font-size: 50px;
       }
@@ -166,6 +169,9 @@
     }
 
     @media (max-width: 480px) {
+      .hero {
+        padding: 0 20px;
+      }
       .hero h2 {
         font-size: 36px;
       }
