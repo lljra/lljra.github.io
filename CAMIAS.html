@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camias</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #3e2723;
+      background: url("images/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.9);
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      animation: slideUp 1s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #4e342e;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-top: 1.5rem;
+    }
+
+    h3, h4, li {
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      margin: 1rem auto;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 1.5rem auto;
+      background-color: #2e7d32;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #1b5e20;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #4e342e;
+      margin-top: 3rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content">
+    <h1>CAMIAS</h1>
+    <img src="images/picture3.jpg" alt="Camias Tree and Fruit">
+
+    <h2>Scientific Name</h2>
+    <ul>
+      <li><h3>Averrhoa bilimbi</h3></li>
+    </ul>
+
+    <h2>What is Camias?</h2>
+    <ul>
+      <li><h4>
+        Also known as bilimbi or cucumber tree, Camias is a tropical fruit from the same family as starfruit. Its small, cucumber-shaped fruits grow directly on the trunk and branches, and are known for their vibrant green color and very sour taste. The plant is commonly used in traditional Filipino and Southeast Asian cooking.
+      </h4></li>
+    </ul>
+
+    <h2>History of Camias</h2>
+    <ul>
+      <li><h4>
+        Native to Malaysia and Indonesia, Camias is called <i>belimbing asam</i> in Malay to distinguish it from its sweeter relative, the starfruit. Its scientific name, <i>Averrhoa bilimbi</i>, honors the philosopher and physician Averroes. The name “bilimbi” is derived from the Malay word <i>belimbing</i>, reflecting its regional roots.
+      </h4></li>
+    </ul>
+
+    <h2>Benefits of Camias</h2>
+    <ul>
+      <li><h4>
+        <strong>Vitamin C-rich:</strong> Supports immune health and skin clarity.<br>
+        <strong>Traditional remedy:</strong> Used for coughs, colds, and even managing blood pressure.<br>
+        <strong>Anti-inflammatory:</strong> Leaves and fruits help treat swelling and skin conditions.<br>
+        <strong>Low-calorie:</strong> A healthy option for weight-conscious diets with intense flavor.
+      </h4></li>
+    </ul>
+
+    <center>
+      <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    </center>
+  </div>
+
+  <footer>
+    <p>Balanga Ibaan Flora Catalog © 2025</p>
+  </footer>
+
+</body>
+</html>
