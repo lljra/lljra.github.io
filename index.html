@@ -196,3 +196,73 @@
       from {opacity: 0;}
       to {opacity: 1;}
     }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 10px #fff7d6, 0 0 20px #ffe185, 0 0 30px #ffcc33, 0 0 40px #f9b233;
+      }
+      50% {
+        text-shadow: 0 0 20px #fff7d6, 0 0 40px #ffe185, 0 0 60px #ffcc33, 0 0 80px #f9b233;
+      }
+      100% {
+        text-shadow: 0 0 10px #fff7d6, 0 0 20px #ffe185, 0 0 30px #ffcc33, 0 0 40px #f9b233;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Balanga Ibaan <span>Flora Catalog</span></h1>
+  </header>
+
+  <section class="hero">
+    <h2>NATURE'S<br>WEALTH</h2>
+  </section>
+
+  <section class="proponents" id="proponents">
+    <h2>PROPONENTS OF THE STUDY</h2>
+    <table>
+      <tr>
+        <th><a href="ken.html">Tristan Ken G. Real</a></th>
+        <th><a href="chiza.html">Chiza Samantha Ardena</a></th>
+        <th><a href="angel.html">Angel S. Dela Cruz</a></th>
+        <th><a href="clea.html">Jazmine Clea Garcia</a></th>
+        <th><a href="princess.html">Princess Dianne B. Semira</a></th>
+        <th><a href="ashley.html">Ashley Lorain A. Ticatic</a></th>
+        <th><a href="plants.html">PROCEED</a></th>
+      </tr>
+    </table>
+
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left" scrollamount="8">
+        <img src="picture1.jpg" alt="">
+        <img src="picture2.jpg" alt="">
+        <img src="picture3.jpg" alt="">
+        <img src="picture4.jpg" alt="">
+        <img src="picture5.jpg" alt="">
+        <img src="picture6.jpg" alt="">
+      </marquee>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Web Cataloging of Indigenous Plants and Trees in Balanga, Ibaan, Batangas
+  </footer>
+</body>
+</html>
