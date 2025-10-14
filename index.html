@@ -12,7 +12,7 @@
       color: #153515;
     }
 
-    /* ✨ Floating HEADER on top of hero */
+    /* ✨ Floating HEADER */
     header {
       position: absolute;
       top: 20px;
@@ -59,11 +59,8 @@
       font-weight: 900;
       margin: 0;
       width: fit-content;
-      border-top-right-radius: 12px;
-      border-bottom-right-radius: 12px;
-      margin-left: 0;
-      padding-left: 60px;
-      margin-left: 30px; /* moves text a bit away from left edge */
+      border-radius: 16px; /* ✅ Rounded on all sides */
+      margin-left: 30px;
       animation: slideInLeft 1.5s ease-out;
     }
 
@@ -77,23 +74,28 @@
       color: black;
     }
 
-    /* BUTTON STYLE */
-    .toggle-btn {
-      font-size: 36px;
-      background-color: rgba(255,255,255,0.8);
+    /* BUTTONS */
+    .btn {
+      font-size: 30px;
+      background-color: rgba(255,255,255,0.85);
       display: inline-block;
-      padding: 10px 20px;
+      padding: 14px 28px;
       border-radius: 8px;
       border: none;
       cursor: pointer;
       transition: all 0.3s ease;
       font-weight: 700;
-      animation: floatUpDown 3s ease-in-out infinite;
+      margin: 10px;
     }
 
-    .toggle-btn:hover {
+    .btn:hover {
       background-color: rgba(255,255,255,1);
-      transform: scale(1.03);
+      transform: scale(1.05);
+    }
+
+    /* Floating animation for the "Proponents" button */
+    .float-btn {
+      animation: floatUpDown 3s ease-in-out infinite;
     }
 
     /* COLLAPSIBLE CONTENT */
@@ -166,6 +168,9 @@
         padding-left: 40px;
         margin-left: 20px;
       }
+      .btn {
+        font-size: 22px;
+      }
       .proponents .marquee-container {
         height: 320px;
       }
@@ -175,6 +180,9 @@
     }
 
     @media (max-width: 480px) {
+      .btn {
+        font-size: 20px;
+      }
       .proponents .marquee-container {
         height: 240px;
       }
@@ -226,8 +234,16 @@
 
   <!-- PROPONENTS SECTION -->
   <section class="proponents" id="proponents">
-    <button class="toggle-btn" onclick="toggleContent()">PROPONENTS OF THE STUDY</button>
+    <!-- NEW PROCEED BUTTON -->
+    <a href="plants.html">
+      <button class="btn">PROCEED</button>
+    </a>
+    <br>
 
+    <!-- TOGGLE BUTTON -->
+    <button class="btn float-btn" onclick="toggleContent()">PROPONENTS OF THE STUDY</button>
+
+    <!-- COLLAPSIBLE CONTENT -->
     <div id="collapsibleContent" class="collapsible-content">
       <table>
         <tr>
@@ -237,7 +253,6 @@
           <th><a href="clea.html">Jazmine Clea Garcia</a></th>
           <th><a href="princess.html">Princess Dianne B. Semira</a></th>
           <th><a href="ashley.html">Ashley Lorain A. Ticatic</a></th>
-          <th><a href="plants.html">PROCEED</a></th>
         </tr>
       </table>
 
