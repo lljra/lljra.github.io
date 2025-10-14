@@ -17,7 +17,7 @@
     header {
       display: flex;
       align-items: center;
-      justify-content: flex-start; /* Moved left */
+      justify-content: flex-start;
       background-color: #1e452f;
       color: white;
       padding: 20px 40px;
@@ -46,23 +46,24 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start; /* Move text to left */
-      text-align: left; /* Align text to left */
+      align-items: flex-start;
       color: #153515;
-      padding: 0 60px;
+      padding-left: 0; /* removes side padding */
+      margin: 0;
       animation: fadeIn 2s ease;
       position: relative;
     }
 
-    /* Glowing animated text */
+    /* Full-width background for text box */
     .hero h2 {
       background-color: rgba(245, 243, 231, 0.9);
-      padding: 20px 40px;
+      padding: 20px 60px 20px 40px; /* add spacing inside, but not on the left edge */
       font-size: 72px;
       line-height: 1.1;
       font-weight: 900;
       margin: 0;
-      border-radius: 10px;
+      width: 100%; /* make it stretch full width */
+      border-radius: 0 15px 15px 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       animation: glow 4s ease-in-out infinite, fadeInUp 2s ease;
       text-transform: uppercase;
@@ -153,12 +154,9 @@
 
     /* Responsive auto-resize */
     @media (max-width: 768px) {
-      .hero {
-        align-items: flex-start;
-        padding: 0 30px;
-      }
       .hero h2 {
         font-size: 50px;
+        padding: 15px 30px;
       }
       .proponents .marquee-container {
         height: 320px;
@@ -169,11 +167,9 @@
     }
 
     @media (max-width: 480px) {
-      .hero {
-        padding: 0 20px;
-      }
       .hero h2 {
         font-size: 36px;
+        padding: 12px 20px;
       }
       .proponents .marquee-container {
         height: 240px;
@@ -238,7 +234,6 @@
     <h2>NATURE'S<br>WEALTH</h2>
   </section>
 
-  <!-- PROPONENTS SECTION -->
   <section class="proponents" id="proponents">
     <h2>PROPONENTS OF THE STUDY</h2>
     <table>
