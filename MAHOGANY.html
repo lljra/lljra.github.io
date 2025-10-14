@@ -1,56 +1,128 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>MAHOGANY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahogany</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #3e2723;
+    background: url("images/forest.jpg") no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .content {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: #4e342e;
+  }
+
+  h2 {
+    color: #2e7d32;
+    margin-top: 1.5rem;
+  }
+
+  h3, h4, li {
+    line-height: 1.6;
+  }
+
+  img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .back-btn {
+    display: inline-block;
+    margin: 1.5rem auto;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .back-btn:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+  }
+
+  footer {
+    text-align: center;
+    color: #4e342e;
+    margin-top: 3rem;
+    font-style: italic;
+  }
+</style>
 </head>
 
-<body background="background.jpg">
-<font color=brown>
-<h1 align =center>TREE'S WEBSHITTTESSS</h1>
-</font>
-<hr>
-<center>
-<table border=5 bgcolor=lightbrown width=80%>
-<th><a href="MANGO.html">MANGO</a></th>
-<th><a href="SANTOL.html">SANTOL</a></th>
-<th><a href="MALUNGGAY.html">MALUNGGAY</a></th>
-<th><a href="CAMIAS.html">CAMIAS</a></th>
-<th><a href="JACKFRUIT.html">JACKFRUIT</a></th>
-<th><a href="MADRE DE CACAO.html">MADRE DE CACAO</a></th>
-<th><a href="BAMBOO.html">BAMBOO</a></th>
-<th><a href="PAPAYA.html">PAPAYA</a></th>
-<th><a href="BANANA.html">BANANA</a></th>
-<th><a href="MAHOGANY.html">MAHOGANY</a></th>
-</table>
-</center>
-<hr>
-<center>
-<cellingpadding=10 width=75%>
-<td>
-<img src="picture7.jpg" height=400>
-<font color=black>
-<h1>MAHOGANY</h1>
-<ul>
-<h2>SCIENTIFIC NAME</h2>
-<ul>
-<li><h3>"Swietenia mahagoni (West Indian mahogany), Swietenia macrophylla (Big-leaf mahogany), Swietenia humilis"</h3>
-</ul>
-<br>
-<h2>WHAT IS MAHOGANY?</h2>
-<ul>
-<li><h4>Mahogany is one of the most valuable timbers in the world, often called a “luxury wood.” It is the national tree of Belize. Overharvesting has led to conservation concerns; some species (like Swietenia macrophylla) are now listed under CITES Appendix II (restricted trade).</h4>
-</ul>
-<br>
-<h2>HISTORY OF MAHOGANY</h2>
-<ul>
-<li><h4>The history of the term Mahogany raises a taxonomic controversy. When the Yoruba tribe was brought from Nigeria to Jamaica as slaves, they recognized a tree in Jamaica just like one back home. The American mahogany, S. mahogani, looked identical to the African Mahogany, Khaya sengalensis. For this reason the Yorubas referred to American Mahogany as they did African Mahogany, M'Oganwo. Over time the term was changed to M'Ogani by the Yorubas. Americans spelled it how they heard it, and thus M'Ogami became Mahogany. The controversy is that the Yorubas believed African and American Mahogany to be the same tree, but French botanist Adrien de Jussieu (1830) insisted that they were from two different genera. He based this on his African Mahogany specimens having four parted flowers instead of the five parts displayed by American Mahogany.</h4>
-</ul>
-<br>
-<h2>BENEFITS OF MAHOGANY</h2>
-<ul>
-<li><h4>This wood is rich in natural oils that have antimicrobial and anti-inflammatory properties.</h4>
-</ul>
-<br>
-<font>
+<body>
+
+  <div class="content">
+    <h1>MAHOGANY</h1>
+    <img src="images/picture7.jpg" alt="Mahogany Tree">
+
+    <h2>Scientific Name</h2>
+    <ul>
+      <li><h3>Swietenia mahagoni (West Indian mahogany), Swietenia macrophylla (Big-leaf mahogany), Swietenia humilis</h3></li>
+    </ul>
+
+    <h2>What is Mahogany?</h2>
+    <ul>
+      <li><h4>Mahogany is one of the most valuable timbers in the world, often called a “luxury wood.” It is the national tree of Belize. Overharvesting has led to conservation concerns; some species (like Swietenia macrophylla) are now listed under CITES Appendix II (restricted trade).</h4></li>
+    </ul>
+
+    <h2>History of Mahogany</h2>
+    <ul>
+      <li><h4>The history of the term Mahogany raises a taxonomic controversy. When the Yoruba tribe was brought from Nigeria to Jamaica as slaves, they recognized a tree in Jamaica just like one back home. The American mahogany, S. mahogani, looked identical to the African Mahogany, Khaya sengalensis. For this reason the Yorubas referred to American Mahogany as they did African Mahogany, M'Oganwo. Over time the term was changed to M'Ogani by the Yorubas. Americans spelled it how they heard it, and thus M'Ogami became Mahogany. The controversy is that the Yorubas believed African and American Mahogany to be the same tree, but French botanist Adrien de Jussieu (1830) insisted that they were from two different genera. He based this on his African Mahogany specimens having four parted flowers instead of the five parts displayed by American Mahogany.</h4></li>
+    </ul>
+
+    <h2>Benefits of Mahogany</h2>
+    <ul>
+      <li><h4>This wood is rich in natural oils that have antimicrobial and anti-inflammatory properties.</h4></li>
+    </ul>
+
+    <center>
+      <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    </center>
+  </div>
+
+  <footer>
+    <p>Balanga Ibaan Flora Catalog © 2025</p>
+  </footer>
 
 </body>
 </html>
