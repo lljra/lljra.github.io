@@ -20,7 +20,7 @@ The website contains:
 
 ## 🚀 Live Website
 Visit the website here:  
-👉 **[https://lljra.github.io/proponents-website/](https://lljra.github.io/proponents-website/)**  
+👉 **[https://lljra.github.io](https://lljra.github.io)**  
 
 ---
 
