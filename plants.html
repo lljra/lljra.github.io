@@ -34,6 +34,13 @@
       animation: slideDown 1s ease;
     }
 
+    h2 {
+      text-align: left;
+      font-size: 32px;
+      color: #1e452f;
+      margin: 40px 0 20px 10%;
+    }
+
     @keyframes slideDown {
       from { transform: translateY(-30px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
@@ -87,12 +94,11 @@
       color: #d8681f;
     }
 
-    /* Improved Back to Home button styles */
     .back-btn {
       display: inline-block;
       margin-top: 30px;
       padding: 12px 28px;
-      background-color: #1e452f; /* dark green */
+      background-color: #1e452f;
       color: white;
       font-weight: bold;
       font-size: 18px;
@@ -103,7 +109,7 @@
     }
 
     .back-btn:hover {
-      background-color: #d8681f; /* orange */
+      background-color: #d8681f;
       color: white;
       transform: scale(1.05);
       box-shadow: 0 6px 12px rgba(216, 104, 31, 0.6);
@@ -123,7 +129,9 @@
   <div class="overlay">
     <h1>🌿 Balanga Ibaan Flora Catalog 🌿</h1>
 
-    <div class="plant-grid">
+    <!-- Trees Section -->
+    <h2>Trees</h2>
+    <div class="plant-grid" id="trees-section">
       <div class="plant-card">
         <a href="MANGO.html">
           <img src="images/picture6.jpeg" alt="Mango" />
@@ -250,6 +258,12 @@
           GARDEN CROTON
         </a>
       </div>
+    </div>
+
+    <!-- Plants Section -->
+    <h2>Plants</h2>
+    <div class="plant-grid" id="plants-section">
+      <!-- Empty for now; you can move plants here later -->
     </div>
 
     <center>
