@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coconut</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #3e2723;
+    background: url("images/forest.jpg") no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .content {
+    background: rgba(255, 255, 255, 0.92);
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 22px;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    animation: slideUp 1s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(35px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: #2e7d32;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    color: #1b5e20;
+    margin-top: 1.6rem;
+  }
+
+  h3, h4, li {
+    line-height: 1.7;
+  }
+
+  img {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  .back-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1.7rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+
+  .back-btn:hover {
+    background-color: #1b5e20;
+    transform: scale(1.06);
+  }
+
+  footer {
+    text-align: center;
+    color: #4e342e;
+    margin: 3rem 0 1.5rem;
+    font-style: italic;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="content">
+    <h1>COCONUT</h1>
+
+    <img src="images/COCONUT.jpg" alt="Coconut Tree (Cocos nucifera)">
+
+    <h2>Scientific Name</h2>
+    <ul>
+      <li><h3>Cocos nucifera</h3></li>
+    </ul>
+
+    <h2>What is Coconut?</h2>
+    <ul>
+      <li>
+        <h4>
+          Coconut is a tropical tree from the Arecaceae family, known for its tall, slender trunk and large, feathery leaves. It produces coconuts — round fruits with a hard shell, fibrous husk, and white edible flesh inside. The coconut is often called the “tree of life” because almost every part of it can be used for food, drink, or materials.
+        </h4>
+      </li>
+    </ul>
+
+    <h2>History of Coconut</h2>
+    <ul>
+      <li>
+        <h4>
+          Coconut trees are believed to have originated in Southeast Asia and the Pacific Islands. They spread naturally by floating across oceans and were also carried by early traders and explorers to tropical regions around the world. In the Philippines, coconuts have long been part of the culture and economy, used for cooking, crafts, and traditional medicine.
+        </h4>
+      </li>
+    </ul>
+
+    <h2>Benefits of Coconut</h2>
+    <ul>
+      <li>
+        <h4>
+          Coconuts are rich in healthy fats, fiber, and minerals like potassium and magnesium. Coconut water helps with hydration, while coconut oil is used for cooking and skincare. The tree’s versatility provides food, shelter, and livelihood to many communities.
+        </h4>
+      </li>
+    </ul>
+
+    <center>
+      <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    </center>
+  </div>
+
+  <footer>
+    Balanga Ibaan Flora Catalog © 2025
+  </footer>
+
+</body>
+</html>
