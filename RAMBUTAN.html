@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rambutan</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #3e2723;
+    background: url("images/forest.jpg") no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .content {
+    background: rgba(255, 255, 255, 0.92);
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 22px;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    animation: slideUp 1s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(35px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    color: #2e7d32;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    color: #1b5e20;
+    margin-top: 1.6rem;
+  }
+
+  h3, h4, li {
+    line-height: 1.7;
+  }
+
+  img {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  .back-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1.7rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+
+  .back-btn:hover {
+    background-color: #1b5e20;
+    transform: scale(1.06);
+  }
+
+  footer {
+    text-align: center;
+    color: #4e342e;
+    margin: 3rem 0 1.5rem;
+    font-style: italic;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="content">
+    <h1>RAMBUTAN</h1>
+
+    <img src="images/RAMBUTAN.jpg" alt="Rambutan Tree (Nephelium lappaceum)">
+
+    <h2>Scientific Name</h2>
+    <ul>
+      <li><h3>Nephelium lappaceum</h3></li>
+    </ul>
+
+    <h2>What is Rambutan?</h2>
+    <ul>
+      <li>
+        <h4>
+          Rambutan is a tropical evergreen tree from the Sapindaceae family, related to lychee and longan. Its name comes from the Malay word <i>rambut</i>, meaning “hair,” because of the fruit’s soft, hair-like spines. The tree can grow up to 20 meters tall and produces red or yellow oval fruits with sweet, juicy flesh inside.
+        </h4>
+      </li>
+    </ul>
+
+    <h2>History of Rambutan</h2>
+    <ul>
+      <li>
+        <h4>
+          Originating in Southeast Asia, rambutan was first cultivated in Malaysia and Indonesia before spreading to the Philippines, Thailand, and other tropical regions. It later reached East Africa and Central America through trade and migration.
+        </h4>
+      </li>
+    </ul>
+
+    <h2>Benefits of Rambutan</h2>
+    <ul>
+      <li>
+        <h4>
+          Rambutan fruit is rich in vitamin C, fiber, and antioxidants, which help strengthen the immune system, aid digestion, and protect the body from cell damage. Its peel and seeds also contain compounds with possible antimicrobial and anti-inflammatory properties.
+        </h4>
+      </li>
+    </ul>
+
+    <center>
+      <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    </center>
+  </div>
+
+  <footer>
+    Balanga Ibaan Flora Catalog © 2025
+  </footer>
+
+</body>
+</html>
