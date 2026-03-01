@@ -69,6 +69,31 @@
     padding-left: 1.2rem;
   }
 
+  /* Leaf gallery styles */
+  .leaf-gallery {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+  }
+
+  .leaf-card {
+    text-align: center;
+    max-width: 280px;
+  }
+
+  .leaf-card img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  }
+
+  .leaf-card h4 {
+    margin-top: 0.6rem;
+    color: #2e7d32;
+  }
+
   .back-btn {
     display: inline-block;
     margin-top: 2rem;
@@ -143,6 +168,19 @@
         </h4>
       </li>
     </ul>
+
+    <h2>Leaves of Atis</h2>
+    <div class="leaf-gallery">
+      <div class="leaf-card">
+        <img src="images/atis_fresh_leaves.jpg" alt="Fresh Atis Leaves">
+        <h4>Fresh Leaves</h4>
+      </div>
+
+      <div class="leaf-card">
+        <img src="images/atis_dried_leaves.jpg" alt="Dried Atis Leaves">
+        <h4>Dried Leaves</h4>
+      </div>
+    </div>
 
     <center>
       <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
