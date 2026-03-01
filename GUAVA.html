@@ -31,14 +31,8 @@
   }
 
   @keyframes slideUp {
-    from {
-      transform: translateY(35px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    from { transform: translateY(35px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
   }
 
   h1 {
@@ -52,9 +46,7 @@
     margin-top: 1.6rem;
   }
 
-  h3, h4, li {
-    line-height: 1.7;
-  }
+  h3, h4, li { line-height: 1.7; }
 
   img {
     display: block;
@@ -63,11 +55,15 @@
     width: 100%;
     max-width: 600px;
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  ul {
-    padding-left: 1.2rem;
+  img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   }
+
+  ul { padding-left: 1.2rem; }
 
   .back-btn {
     display: inline-block;
@@ -109,29 +105,32 @@
 
     <h2>What is Guava?</h2>
     <ul>
-      <li>
-        <h4>
-          Guava is a tropical fruit tree belonging to the Myrtaceae family. It is a small tree or shrub with smooth bark, broad leaves, and round or oval fruits that can be green or yellow when ripe, containing pink or white flesh filled with tiny edible seeds. The fruit has a sweet, fragrant flavor and is commonly eaten fresh or made into juice, jams, and desserts.
-        </h4>
-      </li>
+      <li><h4>
+        Guava is a tropical fruit tree belonging to the Myrtaceae family. 
+        It is a small tree or shrub with smooth bark, broad leaves, 
+        and round or oval fruits that can be green or yellow when ripe, 
+        containing pink or white flesh filled with tiny edible seeds. 
+        The fruit has a sweet, fragrant flavor and is commonly eaten fresh 
+        or made into juice, jams, and desserts.
+      </h4></li>
     </ul>
 
     <h2>History of Guava</h2>
     <ul>
-      <li>
-        <h4>
-          Native to Central America and Mexico, guava spread to tropical and subtropical regions worldwide through Spanish and Portuguese explorers in the 1500s. Today, it grows widely in countries like the Philippines, India, and Thailand, where it thrives in warm climates and is valued for its flavor and health benefits.
-        </h4>
-      </li>
+      <li><h4>
+        Native to Central America and Mexico, guava spread to tropical and subtropical regions worldwide 
+        through Spanish and Portuguese explorers in the 1500s. Today, it grows widely in countries like 
+        the Philippines, India, and Thailand, where it thrives in warm climates and is valued for its flavor and health benefits.
+      </h4></li>
     </ul>
 
     <h2>Benefits of Guava</h2>
     <ul>
-      <li>
-        <h4>
-          Guava is rich in vitamin C, fiber, and antioxidants, which help strengthen immunity, improve digestion, and protect against infections. The leaves are also used in traditional medicine to treat diarrhea and promote oral health. Eating guava regularly can support overall wellness and provide a natural boost of nutrients.
-        </h4>
-      </li>
+      <li><h4>
+        Guava is rich in vitamin C, fiber, and antioxidants, which help strengthen immunity, improve digestion, 
+        and protect against infections. The leaves are also used in traditional medicine to treat diarrhea 
+        and promote oral health. Eating guava regularly can support overall wellness and provide a natural boost of nutrients.
+      </h4></li>
     </ul>
 
     <center>
