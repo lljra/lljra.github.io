@@ -21,18 +21,18 @@
   }
 
   .content {
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.9);
     margin: 3rem auto;
-    padding: 2.5rem;
-    border-radius: 22px;
+    padding: 2rem;
+    border-radius: 20px;
     max-width: 900px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     animation: slideUp 1s ease-out;
   }
 
   @keyframes slideUp {
     from {
-      transform: translateY(35px);
+      transform: translateY(30px);
       opacity: 0;
     }
     to {
@@ -44,25 +44,30 @@
   h1 {
     text-align: center;
     color: #2e7d32;
-    letter-spacing: 2px;
   }
 
   h2 {
     color: #1b5e20;
-    margin-top: 1.6rem;
+    margin-top: 1.5rem;
   }
 
   h3, h4, li {
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
   img {
     display: block;
-    margin: 1.5rem auto;
-    border-radius: 18px;
+    margin: 1rem auto;
+    border-radius: 15px;
     width: 100%;
     max-width: 600px;
-    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
   }
 
   ul {
@@ -109,25 +114,24 @@
 
   .back-btn {
     display: inline-block;
-    margin-top: 2rem;
+    margin: 1.5rem auto;
     background-color: #2e7d32;
     color: white;
     text-decoration: none;
-    padding: 0.9rem 1.7rem;
-    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
     transition: all 0.3s ease;
-    font-weight: 600;
   }
 
   .back-btn:hover {
     background-color: #1b5e20;
-    transform: scale(1.06);
+    transform: scale(1.05);
   }
 
   footer {
     text-align: center;
     color: #4e342e;
-    margin: 3rem 0 1.5rem;
+    margin-top: 3rem;
     font-style: italic;
   }
 </style>
@@ -183,15 +187,15 @@
 
     <!-- ✅ LEAF CARDS (FRESH vs DRIED ONLY) -->
     <h2>Leaves of Pepper</h2>
-    <div class="leaf-grid">
+    <div class="leaf-gallery">
       <div class="leaf-card">
         <img src="images/leaves/fresh/leaves2001.jpeg" alt="Fresh Pepper Leaves">
-        <p>Fresh Leaves</p>
+        <h4>Fresh Leaves</h4>
       </div>
 
       <div class="leaf-card">
         <img src="images/leaves/dry/leaves2001.jpeg" alt="Dried Pepper Leaves">
-        <p>Dried Leaves</p>
+        <h4>Dried Leaves</h4>
       </div>
     </div>
 
