@@ -15,62 +15,35 @@
     animation: fadeIn 1.5s ease-in-out;
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
   .content {
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.9);
     margin: 3rem auto;
-    padding: 2.5rem;
-    border-radius: 22px;
+    padding: 2rem;
+    border-radius: 20px;
     max-width: 900px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     animation: slideUp 1s ease-out;
   }
 
-  @keyframes slideUp {
-    from { transform: translateY(35px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
+  @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-  h1 {
-    text-align: center;
-    color: #2e7d32;
-    letter-spacing: 2px;
-  }
+  h1 { text-align: center; color: #4e342e; }
+  h2 { color: #2e7d32; margin-top: 1.5rem; }
+  h3, h4, li { line-height: 1.6; }
 
-  h2 {
-    color: #1b5e20;
-    margin-top: 1.6rem;
-  }
-
-  h3, h4, li { line-height: 1.7; }
-
-  img {
-    display: block;
-    margin: 1.5rem auto;
-    border-radius: 18px;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  }
+  img { display: block; margin: 1rem auto; border-radius: 15px; width: 100%; max-width: 600px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
 
   ul { padding-left: 1.2rem; }
 
+  /* Leaf gallery */
   .leaf-gallery {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
   }
 
   .leaf-card {
@@ -82,81 +55,77 @@
   .leaf-card img {
     width: 100%;
     border-radius: 14px;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 16px rgba(0,0,0,0.3);
   }
 
-  .leaf-card:hover { transform: translateY(-6px); }
-
-  .leaf-card h4 {
-    margin-top: 0.6rem;
-    color: #2e7d32;
+  .leaf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   }
+
+  .leaf-card h4 { margin-top: 0.6rem; color: #2e7d32; }
 
   .back-btn {
     display: inline-block;
-    margin-top: 2rem;
+    margin: 1.5rem auto;
     background-color: #2e7d32;
     color: white;
     text-decoration: none;
-    padding: 0.9rem 1.7rem;
-    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
     transition: all 0.3s ease;
-    font-weight: 600;
   }
 
   .back-btn:hover {
     background-color: #1b5e20;
-    transform: scale(1.06);
+    transform: scale(1.05);
   }
 
-  footer {
-    text-align: center;
-    color: #4e342e;
-    margin: 3rem 0 1.5rem;
-    font-style: italic;
-  }
+  footer { text-align: center; color: #4e342e; margin-top: 3rem; font-style: italic; }
 </style>
 </head>
 
 <body>
-
   <div class="content">
     <h1>CORN PLANT</h1>
-
     <img src="images/picture11.jpeg" alt="Corn Plant (Dracaena fragrans)">
 
     <h2>Scientific Name</h2>
-    <ul>
-      <li><h3>Dracaena fragrans</h3></li>
-    </ul>
+    <ul><li><h3>Dracaena fragrans</h3></li></ul>
 
     <h2>What is the Corn Plant?</h2>
-    <ul>
-      <li><h4>
-        The Corn Plant is an evergreen shrub belonging to the family Asparagaceae. 
-        It is a popular ornamental plant known for its thick, woody trunks and 
-        rosettes of long, arching leaves that resemble maize foliage. Often used 
-        indoors to add a tropical touch.
-      </h4></li>
-    </ul>
+    <ul><li><h4>
+      The Corn Plant is an evergreen shrub belonging to the family Asparagaceae. 
+      It is a popular ornamental plant known for its thick, woody trunks and 
+      rosettes of long, arching leaves that resemble maize foliage. Often used 
+      indoors to add a tropical touch.
+    </h4></li></ul>
 
     <h2>History of the Corn Plant</h2>
-    <ul>
-      <li><h4>
-        Native to tropical Africa, the Corn Plant has been used as a decorative 
-        houseplant in Europe since the mid-1800s. Its species name, <i>fragrans</i>, 
-        refers to its fragrant white flowers. It thrived in Victorian homes due 
-        to its low-light tolerance and resilience.
-      </h4></li>
-    </ul>
+    <ul><li><h4>
+      Native to tropical Africa, the Corn Plant has been used as a decorative 
+      houseplant in Europe since the mid-1800s. Its species name, <i>fragrans</i>, 
+      refers to its fragrant white flowers. It thrived in Victorian homes due 
+      to its low-light tolerance and resilience.
+    </h4></li></ul>
 
     <h2>Benefits of the Corn Plant</h2>
-    <ul>
-      <li><h4>
-        Valued for air-purifying qualities, it removes toxins like formaldehyde and benzene. 
-        It is low-maintenance and drought-tolerant, perfect for improving indoor air quality.
-      </h4></li>
-    </ul>
+    <ul><li><h4>
+      Valued for air-purifying qualities, it removes toxins like formaldehyde and benzene. 
+      It is low-maintenance and drought-tolerant, perfect for improving indoor air quality.
+    </h4></li></ul>
+
+    <h2>Leaves of Corn Plant</h2>
+    <div class="leaf-gallery">
+      <div class="leaf-card">
+        <img src="images/corn_fresh_leaf.jpeg" alt="Fresh Leaf">
+        <h4>Fresh Leaf</h4>
+      </div>
+      <div class="leaf-card">
+        <img src="images/corn_dried_leaf.jpeg" alt="Dried Leaf">
+        <h4>Dried Leaf</h4>
+      </div>
+    </div>
 
     <center>
       <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
@@ -164,8 +133,7 @@
   </div>
 
   <footer>
-    Balanga Ibaan Flora Catalog © 2025
+    © 2025 Balanga Ibaan Flora Catalog
   </footer>
-
 </body>
 </html>
