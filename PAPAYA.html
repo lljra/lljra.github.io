@@ -1,130 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Papaya</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Papaya</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      color: #3e2723;
-      background: url("images/background.jpg") no-repeat center center fixed;
-      background-size: cover;
-      animation: fadeIn 1.5s ease-in-out;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #3e2723;
+    background: url("images/forest.jpg") no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 
-    .content {
-      background: rgba(255, 255, 255, 0.9);
-      margin: 3rem auto;
-      padding: 2rem;
-      border-radius: 20px;
-      max-width: 900px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-      animation: slideUp 1s ease-out;
-    }
+  .content {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1s ease-out;
+  }
 
-    @keyframes slideUp {
-      from {
-        transform: translateY(30px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
     }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
-    h1 {
-      text-align: center;
-      color: #4e342e;
-    }
+  h1 {
+    text-align: center;
+    color: #2e7d32;
+  }
 
-    h2 {
-      color: #2e7d32;
-      margin-top: 1.5rem;
-    }
+  h2 {
+    color: #1b5e20;
+    margin-top: 1.5rem;
+  }
 
-    h3, h4, li {
-      line-height: 1.6;
-    }
+  h3, h4, li {
+    line-height: 1.6;
+  }
 
-    img {
-      display: block;
-      margin: 1rem auto;
-      border-radius: 15px;
-      width: 100%;
-      max-width: 600px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    }
+  img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-    .leaf-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
+  img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  }
 
-    .leaf-card {
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+  ul {
+    padding-left: 1.2rem;
+  }
 
-    .leaf-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    }
+  .leaf-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .leaf-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .leaf-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
  
-    .leaf-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      margin: 0;
-      border-radius: 0;
-      box-shadow: none;
-    }
+  .leaf-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
  
-    .leaf-card h4 {
-      text-align: center;
-      padding: 0.8rem;
-      margin: 0;
-      background-color: #e8f5e9;
-      color: #2e7d32;
-      font-weight: 600;
-    }
+  .leaf-card h4 {
+    text-align: center;
+    padding: 0.8rem;
+    margin: 0;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-weight: 600;
+  }
 
-    .back-btn {
-      display: inline-block;
-      margin: 1.5rem auto;
-      background-color: #2e7d32;
-      color: white;
-      text-decoration: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-    }
+  .back-btn {
+    display: inline-block;
+    margin: 1.5rem auto;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
 
-    .back-btn:hover {
-      background-color: #1b5e20;
-      transform: scale(1.05);
-    }
+  .back-btn:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+  }
 
-    footer {
-      text-align: center;
-      color: #4e342e;
-      margin-top: 3rem;
-      font-style: italic;
-    }
-  </style>
+  footer {
+    text-align: center;
+    color: #4e342e;
+    margin-top: 3rem;
+    font-style: italic;
+  }
+</style>
 </head>
 
 <body>
@@ -161,15 +171,15 @@
 
     <!-- ✅ LEAF CARDS (FRESH & DRIED ONLY) -->
     <h2>Leaves of Papaya</h2>
-    <div class="leaf-grid">
+    <div class="leaf-gallery">
       <div class="leaf-card">
         <img src="images/leaves/fresh/leaves1008.jpeg" alt="Fresh Papaya Leaves">
-        <p>Fresh Leaves</p>
+        <h4>Fresh Leaves</h4>
       </div>
 
       <div class="leaf-card">
         <img src="images/leaves/dry/leaves1008.jpeg" alt="Dried Papaya Leaves">
-        <p>Dried Leaves</p>
+        <h4>Dried Leaves</h4>
       </div>
     </div>
 
