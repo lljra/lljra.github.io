@@ -69,6 +69,45 @@
     padding-left: 1.2rem;
   }
 
+  /* ===== LEAF CARDS ===== */
+  .leaf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .leaf-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+
+  .leaf-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  .leaf-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .leaf-card p {
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 500;
+    color: #2e7d32;
+  }
+  /* ===== END LEAF CARDS ===== */
+
   .back-btn {
     display: inline-block;
     margin-top: 2rem;
@@ -142,6 +181,20 @@
         </h4>
       </li>
     </ul>
+
+    <!-- ✅ LEAF CARDS (FRESH vs DRIED ONLY) -->
+    <h2>Leaves of Pepper</h2>
+    <div class="leaf-grid">
+      <div class="leaf-card">
+        <img src="images/pepper-fresh-leaves.jpg" alt="Fresh Pepper Leaves">
+        <p>Fresh Leaves</p>
+      </div>
+
+      <div class="leaf-card">
+        <img src="images/pepper-dried-leaves.jpg" alt="Dried Pepper Leaves">
+        <p>Dried Leaves</p>
+      </div>
+    </div>
 
     <center>
       <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
