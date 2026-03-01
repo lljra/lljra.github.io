@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Banana</title>
+
   <style>
     body {
       margin: 0;
@@ -69,6 +70,36 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     }
 
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Leaf gallery */
+    .leaf-gallery {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+    }
+
+    .leaf-card {
+      text-align: center;
+      max-width: 280px;
+    }
+
+    .leaf-card img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .leaf-card h4 {
+      margin-top: 0.6rem;
+      color: #2e7d32;
+      text-align: center;
+    }
+
     .back-btn {
       display: inline-block;
       margin: 2rem auto 0 auto;
@@ -108,23 +139,36 @@
     <h2>What is Banana?</h2>
     <ul>
       <li><h4>
-        The banana is the fruit of the genus Musa, family Musaceae, one of the world's most important fruit crops. Grown mostly in the tropics, bananas are valued worldwide for their flavor, nutritional value, and year-round availability. Dessert bananas (Cavendish) are commonly eaten fresh, but can also be fried, mashed, or used in pies, puddings, muffins, cakes, and breads.
+        The banana is the fruit of the genus Musa, family Musaceae, one of the world's most important fruit crops. Grown mostly in the tropics, bananas are valued worldwide for their flavor, nutritional value, and year-round availability.
       </h4></li>
     </ul>
 
     <h2>History of Banana</h2>
     <ul>
       <li><h4>
-        Bananas were first domesticated in Southeast Asia. Early Greek, Latin, and Arab writings mention bananas, with Alexander the Great encountering them in India. After the discovery of America, bananas were introduced from the Canary Islands to the New World, spreading rapidly. By the 19th century, they were common in U.S. markets. While dessert bananas dominate international trade, plantains make up about 85% of worldwide cultivation.
+        Bananas were first domesticated in Southeast Asia and later spread worldwide through trade and exploration. By the 19th century, bananas had become a staple fruit in many countries.
       </h4></li>
     </ul>
 
     <h2>Benefits of Banana</h2>
     <ul>
       <li><h4>
-        Bananas are a widely consumed fruit known for their nutritional benefits. A ripe banana contains about 22% carbohydrates and is rich in dietary fiber, potassium, manganese, vitamins B6 and C. Per 100g, it provides around 92 kcal energy, 74.26g water, and various vitamins and minerals. They contain minimal fat and protein but are an excellent source of nutrients.
+        Bananas are rich in potassium, fiber, and essential vitamins such as B6 and C. They provide quick energy, support digestion, and contribute to heart and muscle health.
       </h4></li>
     </ul>
+
+    <h2>Leaves of Banana</h2>
+    <div class="leaf-gallery">
+      <div class="leaf-card">
+        <img src="images/banana_fresh_leaves.jpg" alt="Fresh Banana Leaves">
+        <h4>Fresh Leaves</h4>
+      </div>
+
+      <div class="leaf-card">
+        <img src="images/banana_dried_leaves.jpg" alt="Dried Banana Leaves">
+        <h4>Dried Leaves</h4>
+      </div>
+    </div>
 
     <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
   </div>
