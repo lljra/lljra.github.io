@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Papaya</title>
+
   <style>
     body {
       margin: 0;
@@ -20,14 +21,13 @@
     }
 
     .content {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.9);
       margin: 3rem auto;
       padding: 2rem;
       border-radius: 20px;
       max-width: 900px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
       animation: slideUp 1s ease-out;
-      text-align: center;
     }
 
     @keyframes slideUp {
@@ -42,22 +42,17 @@
     }
 
     h1 {
+      text-align: center;
       color: #4e342e;
-      margin-bottom: 1rem;
     }
 
     h2 {
       color: #2e7d32;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-      text-align: left;
+      margin-top: 1.5rem;
     }
 
     h3, h4, li {
       line-height: 1.6;
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto 1rem auto;
     }
 
     img {
@@ -69,9 +64,48 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     }
 
+    /* ===== LEAF CARDS ===== */
+    .leaf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .leaf-card {
+      background: #ffffff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .leaf-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .leaf-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .leaf-card p {
+      text-align: center;
+      padding: 0.8rem;
+      font-weight: 500;
+      color: #2e7d32;
+    }
+    /* ===== END LEAF CARDS ===== */
+
     .back-btn {
       display: inline-block;
-      margin: 2rem auto 0 auto;
+      margin: 1.5rem auto;
       background-color: #2e7d32;
       color: white;
       text-decoration: none;
@@ -108,25 +142,41 @@
     <h2>What is Papaya?</h2>
     <ul>
       <li><h4>
-        Papaya is the succulent fruit of a large plant from the family Caricaceae. Its origin is somewhat unclear but may represent a fusion of two or more Carica species native to Mexico and Central America. Today, papaya is cultivated across the tropical world and into the warmest subtropical regions. The fruit is slightly sweet with a pleasant musky tang, more pronounced in some varieties and climates. It’s a popular breakfast fruit worldwide and is also used in salads, pies, sherbets, juices, and confections. The unripe fruit can be cooked like squash.
+        Papaya is the succulent fruit of a large plant from the family Caricaceae. It is cultivated across the tropical world and into warm subtropical regions. The fruit is slightly sweet with a pleasant musky tang and is widely used fresh or cooked.
       </h4></li>
     </ul>
 
     <h2>History of Papaya</h2>
     <ul>
       <li><h4>
-        The papaya has long been cultivated in Mexico and Central America. Its distribution expanded globally with tropical agriculture. It remains an important fruit crop and culinary staple in many countries. The fruit's unique flavor and nutritional properties have contributed to its widespread popularity.
+        Papaya has long been cultivated in Mexico and Central America and later spread globally with tropical agriculture.
       </h4></li>
     </ul>
 
     <h2>Benefits of Papaya</h2>
     <ul>
       <li><h4>
-        Papaya contains the enzyme papain found in the leaves, latex, roots, and fruit, which helps break down proteins and is used in biochemical research. Papain tenderizes meat, clarifies beer, removes hair from hides, and is an enzyme cleanser for soft contact lenses. It's also used in some toothpastes, cosmetics, and treatments for indigestion, ulcers, fever, and swelling. Another enzyme, chymopapain, helps dissolve ruptured discs in lumbar spine injuries and acts as a protein digestant. The unripe fruit’s milky juice contains papain, resembling pepsin, and is used to relieve indigestion and tenderize meat.
+        Papaya contains papain and chymopapain, enzymes that aid digestion, tenderize meat, and have medical and industrial uses.
       </h4></li>
     </ul>
 
-    <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    <!-- ✅ LEAF CARDS (FRESH & DRIED ONLY) -->
+    <h2>Leaves of Papaya</h2>
+    <div class="leaf-grid">
+      <div class="leaf-card">
+        <img src="images/papaya-fresh-leaves.jpg" alt="Fresh Papaya Leaves">
+        <p>Fresh Leaves</p>
+      </div>
+
+      <div class="leaf-card">
+        <img src="images/papaya-dried-leaves.jpg" alt="Dried Papaya Leaves">
+        <p>Dried Leaves</p>
+      </div>
+    </div>
+
+    <center>
+      <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
+    </center>
   </div>
 
   <footer>
