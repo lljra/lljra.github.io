@@ -31,14 +31,8 @@
   }
 
   @keyframes slideUp {
-    from {
-      transform: translateY(35px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    from { transform: translateY(35px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
   }
 
   h1 {
@@ -52,9 +46,7 @@
     margin-top: 1.6rem;
   }
 
-  h3, h4, li {
-    line-height: 1.7;
-  }
+  h3, h4, li { line-height: 1.7; }
 
   img {
     display: block;
@@ -63,10 +55,41 @@
     width: 100%;
     max-width: 600px;
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  ul {
-    padding-left: 1.2rem;
+  img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+
+  ul { padding-left: 1.2rem; }
+
+  .leaf-gallery {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+  }
+
+  .leaf-card {
+    text-align: center;
+    max-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .leaf-card img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .leaf-card:hover { transform: translateY(-6px); }
+
+  .leaf-card h4 {
+    margin-top: 0.6rem;
+    color: #2e7d32;
   }
 
   .back-btn {
@@ -109,42 +132,30 @@
 
     <h2>What is the Corn Plant?</h2>
     <ul>
-      <li>
-        <h4>
-          The Corn Plant is an evergreen shrub belonging to the family Asparagaceae. 
-          It is a popular ornamental plant known for its thick, woody trunks and 
-          rosettes of long, arching leaves that resemble the foliage of maize. 
-          While it can grow quite tall in the wild, it is a slow-growing plant often 
-          used to add a tropical touch to indoor spaces.
-        </h4>
-      </li>
+      <li><h4>
+        The Corn Plant is an evergreen shrub belonging to the family Asparagaceae. 
+        It is a popular ornamental plant known for its thick, woody trunks and 
+        rosettes of long, arching leaves that resemble maize foliage. Often used 
+        indoors to add a tropical touch.
+      </h4></li>
     </ul>
 
     <h2>History of the Corn Plant</h2>
     <ul>
-      <li>
-        <h4>
-          Native to tropical Africa, the Corn Plant has been used as a decorative 
-          houseplant in Europe since the mid-1800s. Its species name, 
-          <i>fragrans</i>, refers to its clusters of white flowers that produce a 
-          strong, sweet scent at night. Historically, it was favored in Victorian 
-          homes because of its ability to thrive in low-light conditions and 
-          withstand neglect.
-        </h4>
-      </li>
+      <li><h4>
+        Native to tropical Africa, the Corn Plant has been used as a decorative 
+        houseplant in Europe since the mid-1800s. Its species name, <i>fragrans</i>, 
+        refers to its fragrant white flowers. It thrived in Victorian homes due 
+        to its low-light tolerance and resilience.
+      </h4></li>
     </ul>
 
     <h2>Benefits of the Corn Plant</h2>
     <ul>
-      <li>
-        <h4>
-          This plant is highly valued for its air-purifying qualities. Studies, 
-          including those by NASA, show it effectively removes indoor toxins like 
-          formaldehyde and benzene. It is also exceptionally low-maintenance and 
-          drought-tolerant, making it a perfect choice for improving air quality 
-          in homes and offices.
-        </h4>
-      </li>
+      <li><h4>
+        Valued for air-purifying qualities, it removes toxins like formaldehyde and benzene. 
+        It is low-maintenance and drought-tolerant, perfect for improving indoor air quality.
+      </h4></li>
     </ul>
 
     <center>
