@@ -62,6 +62,46 @@
       width: 100%;
       max-width: 600px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Leaf cards */
+    .leaf-gallery {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+    }
+
+    .leaf-card {
+      text-align: center;
+      max-width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .leaf-card img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .leaf-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .leaf-card h4 {
+      margin-top: 0.6rem;
+      color: #2e7d32;
     }
 
     .back-btn {
@@ -103,14 +143,18 @@
     <h2>What is Camias?</h2>
     <ul>
       <li><h4>
-        Also known as bilimbi or cucumber tree, Camias is a tropical fruit from the same family as starfruit. Its small, cucumber-shaped fruits grow directly on the trunk and branches, and are known for their vibrant green color and very sour taste. The plant is commonly used in traditional Filipino and Southeast Asian cooking.
+        Also known as bilimbi or cucumber tree, Camias is a tropical fruit from the same
+        family as starfruit. Its small, cucumber-shaped fruits grow directly on the trunk
+        and branches and are known for their very sour taste.
       </h4></li>
     </ul>
 
     <h2>History of Camias</h2>
     <ul>
       <li><h4>
-        Native to Malaysia and Indonesia, Camias is called <i>belimbing asam</i> in Malay to distinguish it from its sweeter relative, the starfruit. Its scientific name, <i>Averrhoa bilimbi</i>, honors the philosopher and physician Averroes. The name “bilimbi” is derived from the Malay word <i>belimbing</i>, reflecting its regional roots.
+        Native to Malaysia and Indonesia, Camias is called <i>belimbing asam</i> in Malay.
+        Its scientific name honors the philosopher and physician Averroes, and the name
+        “bilimbi” comes from the Malay word <i>belimbing</i>.
       </h4></li>
     </ul>
 
@@ -118,11 +162,24 @@
     <ul>
       <li><h4>
         <strong>Vitamin C-rich:</strong> Supports immune health and skin clarity.<br>
-        <strong>Traditional remedy:</strong> Used for coughs, colds, and even managing blood pressure.<br>
-        <strong>Anti-inflammatory:</strong> Leaves and fruits help treat swelling and skin conditions.<br>
-        <strong>Low-calorie:</strong> A healthy option for weight-conscious diets with intense flavor.
+        <strong>Traditional remedy:</strong> Used for coughs, colds, and blood pressure.<br>
+        <strong>Anti-inflammatory:</strong> Helps treat swelling and skin conditions.<br>
+        <strong>Low-calorie:</strong> Intense flavor with minimal calories.
       </h4></li>
     </ul>
+
+    <h2>Leaves of Camias</h2>
+    <div class="leaf-gallery">
+      <div class="leaf-card">
+        <img src="images/camias_fresh_leaves.jpg" alt="Fresh Camias Leaves">
+        <h4>Fresh Leaves</h4>
+      </div>
+
+      <div class="leaf-card">
+        <img src="images/camias_dried_leaves.jpg" alt="Dried Camias Leaves">
+        <h4>Dried Leaves</h4>
+      </div>
+    </div>
 
     <center>
       <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
