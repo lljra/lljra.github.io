@@ -31,14 +31,8 @@
   }
 
   @keyframes slideUp {
-    from {
-      transform: translateY(35px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    from { transform: translateY(35px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
   }
 
   h1 {
@@ -52,9 +46,7 @@
     margin-top: 1.6rem;
   }
 
-  h3, h4, li {
-    line-height: 1.7;
-  }
+  h3, h4, li { line-height: 1.7; }
 
   img {
     display: block;
@@ -63,10 +55,41 @@
     width: 100%;
     max-width: 600px;
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  ul {
-    padding-left: 1.2rem;
+  img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+
+  ul { padding-left: 1.2rem; }
+
+  .leaf-gallery {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+  }
+
+  .leaf-card {
+    text-align: center;
+    max-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .leaf-card img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .leaf-card:hover { transform: translateY(-6px); }
+
+  .leaf-card h4 {
+    margin-top: 0.6rem;
+    color: #2e7d32;
   }
 
   .back-btn {
@@ -109,43 +132,37 @@
 
     <h2>What is Dieffenbachia?</h2>
     <ul>
-      <li>
-        <h4>
-          Dieffenbachia is a popular tropical houseplant admired for its large,
-          decorative leaves with striking variegated patterns. While it can
-          produce white blooms under ideal conditions, it is primarily grown for
-          its foliage. Caution is required when handling this plant, as its sap is
-          toxic and can cause temporary loss of speech if ingested by numbing the
-          throat and vocal cords.
-        </h4>
-      </li>
+      <li><h4>
+        Dieffenbachia is a popular tropical houseplant admired for its large,
+        decorative leaves with striking variegated patterns. While it can
+        produce white blooms under ideal conditions, it is primarily grown for
+        its foliage. Caution is required when handling this plant, as its sap is
+        toxic and can cause temporary loss of speech if ingested by numbing the
+        throat and vocal cords.
+      </h4></li>
     </ul>
 
     <h2>History of Dieffenbachia</h2>
     <ul>
-      <li>
-        <h4>
-          Dieffenbachia originates from the tropical regions of Central and South
-          America, where it naturally grows in warm, humid environments. It has
-          long been used as an ornamental plant in parks and gardens. Over time,
-          it became a popular indoor plant worldwide, especially in Europe and
-          other temperate regions, due to its attractive foliage and adaptability
-          to indoor conditions.
-        </h4>
-      </li>
+      <li><h4>
+        Dieffenbachia originates from the tropical regions of Central and South
+        America, where it naturally grows in warm, humid environments. It has
+        long been used as an ornamental plant in parks and gardens. Over time,
+        it became a popular indoor plant worldwide, especially in Europe and
+        other temperate regions, due to its attractive foliage and adaptability
+        to indoor conditions.
+      </h4></li>
     </ul>
 
     <h2>Benefits of Dieffenbachia</h2>
     <ul>
-      <li>
-        <h4>
-          Dieffenbachia is known for improving indoor air quality by absorbing
-          pollutants such as formaldehyde, benzene, and trichloroethylene. Studies
-          suggest it is effective in reducing carbon dioxide levels indoors,
-          making it a beneficial addition to homes and offices for creating a
-          healthier living environment.
-        </h4>
-      </li>
+      <li><h4>
+        Dieffenbachia is known for improving indoor air quality by absorbing
+        pollutants such as formaldehyde, benzene, and trichloroethylene. Studies
+        suggest it is effective in reducing carbon dioxide levels indoors,
+        making it a beneficial addition to homes and offices for creating a
+        healthier living environment.
+      </h4></li>
     </ul>
 
     <center>
