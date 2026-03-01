@@ -64,8 +64,7 @@
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     }
 
-    /* ===== LEAF CARDS (UNCHANGED STYLE) ===== */
-    .leaf-grid {
+    .leaf-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
@@ -74,34 +73,34 @@
 
     .leaf-card {
       background: #ffffff;
-      border-radius: 15px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
       overflow: hidden;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: default;
     }
 
     .leaf-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
-
+ 
     .leaf-card img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
       margin: 0;
-      box-shadow: none;
       border-radius: 0;
+      box-shadow: none;
     }
-
-    .leaf-card p {
+ 
+    .leaf-card h4 {
       text-align: center;
       padding: 0.8rem;
-      font-weight: 500;
+      margin: 0;
+      background-color: #e8f5e9;
       color: #2e7d32;
+      font-weight: 600;
     }
-    /* ===== END LEAF CARDS ===== */
 
     .back-btn {
       display: inline-block;
