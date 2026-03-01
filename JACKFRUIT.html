@@ -62,6 +62,46 @@
       width: 100%;
       max-width: 600px;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    /* Leaf cards */
+    .leaf-gallery {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+    }
+
+    .leaf-card {
+      text-align: center;
+      max-width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .leaf-card img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .leaf-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .leaf-card h4 {
+      margin-top: 0.6rem;
+      color: #2e7d32;
     }
 
     .back-btn {
@@ -120,6 +160,19 @@
         Jackfruit is packed with fiber, vitamins A, B, and C, and essential minerals like potassium, magnesium, calcium, iron, copper, and phosphorus. It supports digestion, boosts immunity, promotes heart health, and aids in red blood cell production. Traditional Ayurvedic medicine uses jackfruit to help regulate blood sugar, soothe skin issues, and improve digestion.
       </h4></li>
     </ul>
+
+    <h2>Leaves of Jackfruit</h2>
+    <div class="leaf-gallery">
+      <div class="leaf-card">
+        <img src="images/jackfruit_fresh_leaf.jpg" alt="Fresh Jackfruit Leaf">
+        <h4>Fresh Leaf</h4>
+      </div>
+
+      <div class="leaf-card">
+        <img src="images/jackfruit_dried_leaf.jpg" alt="Dried Jackfruit Leaf">
+        <h4>Dried Leaf</h4>
+      </div>
+    </div>
 
     <center>
       <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
