@@ -69,6 +69,46 @@
     padding-left: 1.2rem;
   }
 
+  /* ===== LEAF CARDS (ONLY ADDITION) ===== */
+  .leaf-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .leaf-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .leaf-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .leaf-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .leaf-card h4 {
+    text-align: center;
+    padding: 0.8rem;
+    margin: 0;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-weight: 600;
+  }
+  /* ===== END LEAF CARDS ===== */
+
   .back-btn {
     display: inline-block;
     margin-top: 2rem;
@@ -150,6 +190,20 @@
         </h4>
       </li>
     </ul>
+
+    <!-- LEAVES SECTION (ONLY ADDITION) -->
+    <h2>Leaves of Snake Plant</h2>
+    <div class="leaf-gallery">
+      <div class="leaf-card">
+        <img src="images/snakeplant_fresh_leaf.jpg" alt="Fresh Snake Plant Leaves">
+        <h4>Fresh Leaves</h4>
+      </div>
+
+      <div class="leaf-card">
+        <img src="images/snakeplant_dried_leaf.jpg" alt="Dried Snake Plant Leaves">
+        <h4>Dried Leaves</h4>
+      </div>
+    </div>
 
     <center>
       <a href="plants.html" class="back-btn">← Back to Plant Catalog</a>
